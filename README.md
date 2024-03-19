@@ -4,7 +4,7 @@ a complete workflow and the report generation for the genome assembly coming fro
 The project summary is present in the ```projectsummary.md```. It is a markdown document and easily editable. If you want then i can convert this into the Tex for the writeup. If you want then i can write the project summary here also but it will look dirty.
 
 # Bolero Project Report:
-## March, 2024
+## January - March, 2024
 ### Project Members: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc, Gaurav Sablok
 #### Organizations: Universitat Potsdam, CIRAD ( Bioinformatics )
 ##### BOLERO Bioinformatics
@@ -24,7 +24,6 @@ Package 1. [pacbio_hifi assembly](https://github.com/sablokgaurav/pacbiohifi_uni
 Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_awk_paf_aligned_genome_fractions)
 
 # Meeting scheduled for June 2024 
-
 
 Gaurav Sablok \
 Academic Staff Member \
