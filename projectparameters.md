@@ -1,4 +1,5 @@
-# This file contains the project parameter that were used to standardize the assembly. Below you will find the detail information for the running of the assembly. 
+## This file contains the project parameter that were used to standardize the assembly. Below you will find the detail information for the running of the assembly. The ones with the --paration=all are for the Universitat Potsdam server and the ones without the same are for the MESO cluster. 
+
 ### downloading the data for the assembly from the NCBI archive
 ```
 #!/bin/sh
@@ -73,7 +74,7 @@ meryl count compress k=30 threads=32 memory=128 $maternal output ERR10930362.mer
 $MERQURY/trio/hapmers.sh ERR10930361.meryl ERR10930362.meryl
 verkko -d ERR61ERR62ERR63 --hifi /home/sablokg/scratch/grapevineassemblies/verkkoassemblyparental/*.fastq.gz --hap-kmers ERR10930361.meryl ERR10930362.meryl trio
 ```
-### invoking the indivual haplotype assembly
+### invoking the indivual haplotype assembly using the hifiasm assembly parameters
 ```
 #!/bin/bash
 #SBATCH --partition=all
@@ -92,7 +93,54 @@ echo $PATH
 #/work/sablok/grapevineassemblies/fastq/ERR10930362.fastq
 #/work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
 #/work/sablok/grapevineassemblies/fastq/ERR10930364.fastq
+hifiasm -o ERR10930361.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930361.fastq 2> ERR10930361.log
 hifiasm -o ERR10930362.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930362.fastq 2> ERR10930362.log
 hifiasm -o ERR10930363.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq 2> ERR10930363.log
 hifiasm -o ERR10930364.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930364.fastq 2> ERR10930364.log
+```
+### invoking the indivual haplotype assembly using the verkko assembly parameters
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/assembly
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+module load lang/Anaconda3/2021.05
+source activate verkko
+readsfile
+# assemblye finish checker
+# if [[ $(grep "100%" *.out | wc -l) ]]; then echo "all assemblies finished"; fi
+#/work/sablok/grapevineassemblies/fastq/ERR10930361.fastq
+#/work/sablok/grapevineassemblies/fastq/ERR10930362.fastq
+#/work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
+#/work/sablok/grapevineassemblies/fastq/ERR10930364.fastq
+echo "verkko running"
+verkko -d ERR10930361ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR10930361.fastq
+verkko -d ERR10930362ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR10930362.fastq
+verkko -d ERR10930363ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
+verkko -d ERR10930364ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR10930364.fastq
+```
+### busco evaluation of the assemblies
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=32
+#SBATCH --mem=50G
+#SBATCH --time=1-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/busco_evaluation/assembly_eval
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+module load bio/BUSCO/5.1.2-foss-2020b
+#busco -i ERR10930361ASM.verkko.fasta -l viridiplantae_odb10 -c 32 -o ERR10930361ASM.busco -m geno
+busco -i ERR10930361ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930361ASM.busco -m geno
+busco -i ERR10930362ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930362ASM.busco -m geno
+busco -i ERR10930363ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930363ASM.busco -m geno
+busco -i ERR10930364ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930364ASM.busco -m geno
 ```
