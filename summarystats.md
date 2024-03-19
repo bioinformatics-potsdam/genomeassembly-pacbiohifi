@@ -1,4 +1,5 @@
-### summary stats of the genome assembly trials done and evaluated for the BOLERO project
+### summary stats of the genome assembly trials done and evaluated for the BOLERO project 
+### verkko assembly evaluation
 ### accession for the indiviual: ERR10930361ASM.busco
 ```
 # BUSCO was run in mode: genome
