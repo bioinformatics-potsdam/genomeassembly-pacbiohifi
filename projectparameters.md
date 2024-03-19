@@ -1,5 +1,38 @@
 ## This file contains the project parameter that were used to standardize the assembly. Below you will find the detail information for the running of the assembly. The ones with the --paration=all are for the Universitat Potsdam server and the ones without the same are for the MESO cluster. 
 
+### List of modules that are of use on the Universitat Potsdam server
+```
+bio/HTSlib/1.11-GCC-10.2.0
+bio/GenomeTools/1.6.1-GCC-10.2.0
+bio/DendroPy/4.5.2-GCCcore-10.2.0
+bio/Kraken/1.1.1-GCCcore-10.2.0
+bio/MAKER/3.01.03-foss-2020b
+bio/MetaEuk/4-GCC-10.2.0
+bio/MrBayes/3.2.7-GCC-10.2.0
+bio/RAxML/8.2.12-foss-2020b-pthreads-avx2
+bio/RepeatMasker/4.1.2-p1-foss-2020b
+bio/RepeatModeler/2.0.2a-foss-2020b
+bio/SAMtools/1.11-GCC-10.2.0
+bio/STAR/2.7.7a-GCC-10.2.0
+bio/Trinity/2.8.4-foss-2018b
+bio/prodigal/2.6.3-GCCcore-10.2.0
+data/scikit-learn/0.23.2-fosscuda-2020b
+lang/Anaconda3/2021.05
+lang/numba/0.52.0-foss-2020b
+lib/TensorFlow/2.4.1-fosscuda-2020b
+vis/matplotlib/3.3.3-foss-2020b
+tools/umap-learn/0.4.6-fosscuda-2020b
+math/Keras/2.4.3-fosscuda-2020b
+vis/torchvision/0.8.2-fosscuda-2020b-PyTorch-1.7.1
+```
+### meryl installation
+```
+git clone https://github.com/marbl/meryl.git
+cd meryl/src
+make -j $threads
+export PATH=/path/to/meryl/…/bin:$PATH
+```
+
 ### downloading the data for the assembly from the NCBI archive
 ```
 #!/bin/sh
