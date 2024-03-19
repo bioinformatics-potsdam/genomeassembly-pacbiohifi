@@ -36,11 +36,15 @@ Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_aw
 [BUSCO Read](https://busco.ezlab.org/) \
 [Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
 
-# Meeting scheduled for June 2024 
+### Genome Analysis and Project Summary
 
 The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md)
 The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md)
 The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md)
+
+### To add figures for the BUSCO, Kmer analysis using the KATS and the QUAST report. 
+
+### Meeting scheduled for June 2024 
 
 Gaurav Sablok \
 Academic Staff Member \
