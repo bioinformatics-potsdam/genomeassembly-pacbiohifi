@@ -73,4 +73,26 @@ meryl count compress k=30 threads=32 memory=128 $maternal output ERR10930362.mer
 $MERQURY/trio/hapmers.sh ERR10930361.meryl ERR10930362.meryl
 verkko -d ERR61ERR62ERR63 --hifi /home/sablokg/scratch/grapevineassemblies/verkkoassemblyparental/*.fastq.gz --hap-kmers ERR10930361.meryl ERR10930362.meryl trio
 ```
-###
+### invoking the indivual haplotype assembly
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=60G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/assemblyhifiasm
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+export PATH=/work/sablok/grapevineassemblies/meryl/build/bin/meryl:$PATH
+export PATH=/work/sablok/grapevineassemblies/assemblyhifiasm/hifiasm:$PATH
+echo $PATH
+#/work/sablok/grapevineassemblies/fastq/ERR10930361.fastq
+#/work/sablok/grapevineassemblies/fastq/ERR10930362.fastq
+#/work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
+#/work/sablok/grapevineassemblies/fastq/ERR10930364.fastq
+hifiasm -o ERR10930362.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930362.fastq 2> ERR10930362.log
+hifiasm -o ERR10930363.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq 2> ERR10930363.log
+hifiasm -o ERR10930364.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930364.fastq 2> ERR10930364.log
+```
