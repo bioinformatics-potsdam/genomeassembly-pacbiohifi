@@ -29,6 +29,13 @@ Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_aw
 [Merqury](https://github.com/marbl/merqury) \
 [Verkko](https://github.com/marbl/verkko) 
 
+### Genome assembly evaluation
+[QUAST](https://github.com/ablab/quast) \
+[BUSCO](https://github.com/metashot/busco) \
+[BUSCO docker](https://gitlab.com/ezlab/busco) \
+[BUSCO Read](https://busco.ezlab.org/) \
+[Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
+
 # Meeting scheduled for June 2024 
 
 Gaurav Sablok \
