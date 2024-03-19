@@ -23,6 +23,12 @@ Dr. Sablok started implementing the genome analysis and finished the first analy
 Package 1. [pacbio_hifi assembly](https://github.com/sablokgaurav/pacbiohifi_universitat_potsdam) \
 Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_awk_paf_aligned_genome_fractions)
 
+### Genome assembly packages used for the assembly
+[hifiasm](https://github.com/chhylp123/hifiasm)
+[Meryl](https://github.com/marbl/meryl)
+[Merqury](https://github.com/marbl/merqury)
+[Verkko](https://github.com/marbl/verkko)
+
 # Meeting scheduled for June 2024 
 
 Gaurav Sablok \
