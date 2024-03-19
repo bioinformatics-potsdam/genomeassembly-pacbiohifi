@@ -5,7 +5,7 @@
 ##### BOLERO Bioinformatics
 ###### Project Member Hire and Official Project Meet: 
 ###### Resource Setup
-   -> A computing cluster with the 256GB or more RAM and multi node cluster computation at Universitat Potsdam
+   -> A computing cluster with the 256GB or more RAM and multi node cluster computation at Universitat Potsdam \
    -> A computing cluster account with 256GB or more and multi node cluster computation at MESO cluster.
    
 # Summary report
