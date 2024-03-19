@@ -11,8 +11,7 @@ There are two approaches to address the pangenome: a whole genome based graph pa
 
 Dr. Sablok started implementing the genome analysis and finished the first analysis for the PacbIo hifi reads [pacbiohifi_assembly](https://github.com/sablokgaurav/pacbiohifi_universitat_potsdam) coming from a sample datasets to integrate and check the assurance of the developmental computational pipeline. Dr. Sablok has evaluated three state of the art methods for the PacBioHifi assembly such as Verkko, HifiASM, genomeASM4pg and the results from the Verkko for one of the indiviual is given below. Additional analysis libraries and packages that have been developed by Dr. Sablok for the analysis of the pacbiohifi reads for the genome assembly are given below:
 
-[pacbio_hifi assembly](https://github.com/sablokgaurav/pacbiohifi_universitat_potsdam)
+[pacbio_hifi assembly](https://github.com/sablokgaurav/pacbiohifi_universitat_potsdam) \
 [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_awk_paf_aligned_genome_fractions)
 
-# BOLERO Updates
-
+# Meeting scheduled for June 2024 
