@@ -36,6 +36,10 @@ Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_aw
 [BUSCO Read](https://busco.ezlab.org/) \
 [Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
 
+### Reference genome based evaluation
+[Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach
+[compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach
+
 ### Additional new approaches integrated into the assembly project for the coffee genome.  
 
 Once the download is finished, map the assembled scaffolds to the vitis genome for checking out the mapping coverage of the assembled genome.The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag)
