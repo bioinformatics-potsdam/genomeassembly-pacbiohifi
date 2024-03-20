@@ -47,9 +47,9 @@ The genome completeness is also evaluated using the compleasm [compleasm](https:
 
 ### Genome Analysis and Project Summary
 
-The project image summary for the June presentation is loated at and by that time, i aim to establish the genome annotation with the complete hint generation. and will build the RUST client application. 
+The project image summary for the June presentation is loated at and by that time, i aim to establish the genome annotation with the complete hint generation. and will build the RUST client application.\ 
 
-[Project summary](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png) \
+![Project summary](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png) 
 
 The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) \
 The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) \
