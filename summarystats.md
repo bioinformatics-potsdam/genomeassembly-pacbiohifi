@@ -60,3 +60,4 @@
         1       Missing BUSCOs (M)                         
         425     Total BUSCO groups searched
 ```
+### completeness results using the compleasm first using the BUSCO and then using the Vitis vinifera reference protein sets.
