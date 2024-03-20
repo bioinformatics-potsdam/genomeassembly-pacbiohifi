@@ -21,11 +21,25 @@ length="value"
 for i in $(for i in $(ls *.csv); \
       do cat $i | awk '{ print $3 }'; done); \ 
                 do if [[ $i -ge "${length}" ]]; then echo $i; fi; done
+
 # normalizing the coverage according to the length
 coveragefile="name"
 for i in $(cat "${coveragefile}" | awk '{ print $2 }'); \
                 do for j in $(cat "${coveragefile}" | awk '{ print $3 }'); \
-                                        do echo $i"\t"$j; done | awk '{ print $1*$2 }'    
+                                        do echo $i"\t"$j; done | awk '{ print $1*$2 }'
+#plotting the length before filtering out the short unitigs
+lengthselectionsort="variable"
+for i in $(cat test.cov | awk '{ print $3 }'); \
+                do if [[ $i -ge "${lengthselectionsort}" ]] then; \ 
+                                        echo $i; fi; done | youplot barplot
+# binning them according to the length filter and then making the sense of the assembled unitigs
+ for i in $(cat test.cov | awk '{ print $3 }'); \
+                do if [[ $i -ge "${lengthselectionsort}" ]] then; \ 
+                                        echo $i; fi; done | youplot histogram
+# genome assembled following length filter and the filtered uitigs greater than 10000
+cat test.cov | awk '$3 > 10000 { print $3 }' | gawk '{ sum += $1 }; \
+                      END { print sum }' && cat test.cov | \
+                                            awk '$3 > 10000 { print  $1"\t"$2"\t"$3 }'  
 #plotting the length before filtering out the short unitigs
 lengthselectionsort="variable"
 for i in $(cat test.cov | awk '{ print $3 }'); \
@@ -62,7 +76,7 @@ cat aligned.paf | awk '{ print  $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6"\t"$7" \
                                                       gawk '{ sum += $1 }; END { print sum }' | \
                                                                         awk '{ print $1/$genomelength*100 }'
 
- for i in $(cat test.cov | awk '{ print $3 }'); \
+for i in $(cat test.cov | awk '{ print $3 }'); \
                 do if [[ $i -ge "${lengthselectionsort}" ]] then; \ 
                                         echo $i; fi; done | youplot histogram
 # calculating the alignment coverage and the genome fraction aligned
