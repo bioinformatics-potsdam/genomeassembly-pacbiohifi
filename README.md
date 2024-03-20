@@ -27,7 +27,7 @@ Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_aw
 [hifiasm](https://github.com/chhylp123/hifiasm) \
 [Meryl](https://github.com/marbl/meryl) \
 [Merqury](https://github.com/marbl/merqury) \
-[Verkko](https://github.com/marbl/verkko) \
+[Verkko](https://github.com/marbl/verkko) 
 #### Gaetan and Manuel this is a new ahplotype assembler and let me know if we want to try this out.
 [HAST assembler](https://github.com/BGI-Qingdao/HAST) 
 
