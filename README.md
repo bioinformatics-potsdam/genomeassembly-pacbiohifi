@@ -56,7 +56,8 @@ The project image summary for the June presentation is loated at and by that tim
 The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) \
 The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) \
 The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) \
-The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md)
+The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) \
+All the installation and the configuration files are located at: https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md
 
 
 ### Meeting scheduled for June 2024 
