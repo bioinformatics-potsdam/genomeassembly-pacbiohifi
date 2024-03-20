@@ -36,16 +36,18 @@ Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk_aw
 [BUSCO Read](https://busco.ezlab.org/) \
 [Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
 
-### Addition of the new approaches i found and integrated into the assembly project for the coffee genome. 
+### Additional new approaches integrated into the assembly project for the coffee genome.  
 
 Once the download is finished, map the assembled scaffolds to the vitis genome for checking out the mapping coverage of the assembled genome.The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag)
 The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
 
 ### Genome Analysis and Project Summary
 
-The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md)
-The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md)
-The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md)
+The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) \
+The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) \
+The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) \
+The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md)
+
 
 ### Meeting scheduled for June 2024 
 
