@@ -1,5 +1,4 @@
-### installation files for the genome evaluation
-### the last one is a YAML file so can be imported directly.
+##### installation files for the genome evaluation using the compleasm and the last one is a YAML file so can be imported directly.
 wget https://github.com/huangnengCSU/compleasm/releases/download/v0.2.5/compleasm-0.2.5_x64-linux.tar.bz2 \
 tar -jxvf compleasm-0.2.5_x64-linux.tar.bz2 \
 compleasm_kit/compleasm.py -h \
