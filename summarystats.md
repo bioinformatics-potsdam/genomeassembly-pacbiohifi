@@ -61,3 +61,13 @@
         425     Total BUSCO groups searched
 ```
 ### completeness results using the compleasm first using the BUSCO and then using the Vitis vinifera reference protein sets.
+S:14.12%, 60
+D:85.88%, 365
+F:0.00%, 0
+I:0.00%, 0
+M:0.00%, 0
+N:425
+Download lineage: 3.39(s)
+Run miniprot: 3259.03(s)
+Analyze miniprot: 1381.91(s)
+Total runtime: 4644.34(s)
