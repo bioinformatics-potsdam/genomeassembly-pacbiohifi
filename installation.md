@@ -1,10 +1,12 @@
 ### installation files for the genome evaluation
 ### the last one is a YAML file so can be imported directly.
-wget https://github.com/huangnengCSU/compleasm/releases/download/v0.2.5/compleasm-0.2.5_x64-linux.tar.bz2
-tar -jxvf compleasm-0.2.5_x64-linux.tar.bz2
-compleasm_kit/compleasm.py -h
-git clone https://github.com/lh3/miniprot
-cd miniprot && make
+wget https://github.com/huangnengCSU/compleasm/releases/download/v0.2.5/compleasm-0.2.5_x64-linux.tar.bz2 \
+tar -jxvf compleasm-0.2.5_x64-linux.tar.bz2 \
+compleasm_kit/compleasm.py -h \
+git clone https://github.com/lh3/miniprot \
+cd miniprot && make \
+##### YAML begins
+```
 name: compleasm
 channels:
   - bioconda
@@ -36,4 +38,10 @@ dependencies:
     - sepp==0.0.0
     - setuptools==68.2.2
     - wheel==0.41.2
-prefix: /home/sablok/.conda/envs/compleasm
+prefix: /home/sablok/.conda/envs/compleasm \
+```
+```
+export PATH="WORKDIR_OF_MINPROT_INSTALLATION":$PATH \
+source activate compleasm \
+python3 compleasm.py run -a ERR10930361ASM.fasta -o ERR10930361ASM -l viridiplantae_odb10 \
+```
