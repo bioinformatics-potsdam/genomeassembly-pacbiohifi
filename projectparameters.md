@@ -1,5 +1,4 @@
 ## This file contains the project parameter that were used to standardize the assembly. Below you will find the detail information for the running of the assembly. The ones with the --paration=all are for the Universitat Potsdam server and the ones without the same are for the MESO cluster. 
-
 ### List of modules that are of use on the Universitat Potsdam server
 ```
 bio/HTSlib/1.11-GCC-10.2.0
@@ -25,15 +24,14 @@ tools/umap-learn/0.4.6-fosscuda-2020b
 math/Keras/2.4.3-fosscuda-2020b
 vis/torchvision/0.8.2-fosscuda-2020b-PyTorch-1.7.1
 ```
-### meryl installation
+> meryl installation
 ```
 git clone https://github.com/marbl/meryl.git
 cd meryl/src
 make -j $threads
 export PATH=/path/to/meryl/…/bin:$PATH
 ```
-
-### downloading the data for the assembly from the NCBI archive
+> downloading the data for the assembly from the NCBI archive
 ```
 #!/bin/sh
 #SBATCH -J=assembly
@@ -54,7 +52,7 @@ cp -r *.gz ./fastqfiles
 cd fastqfiles
 for i in *.fastq.gz; do gunzip $i; done
 ```
-### invoking the singularity maternal and the parental assembly using the hifiasm
+> invoking the singularity maternal and the parental assembly using the hifiasm
 ```
 #!/bin/bash
 #SBATCH -J=hifiassembly
@@ -77,7 +75,7 @@ yak count -k 31 -t 32 -o parental.yak /home/sablokg/scratch/grapevineassemblies/
 yak count -k 31 -t 32 -o maternal.yak /home/sablokg/scratch/grapevineassemblies/verkkoassemblyparental/ERR10930362.fastq.gz
 hifiasm -o maternalpaternal.asm -t 32 -1 parental.yak -2 maternal.yak /home/sablokg/scratch/grapevineassemblies/verkkoassemblyparental/*.fastq.gz 2> maternalpaternal.log
 ```
-### invoking the maternal and the parental assembly using the verkko assembler
+> invoking the maternal and the parental assembly using the verkko assembler
 ```
 #!/bin/bash
 #SBATCH -J=assembly
@@ -107,7 +105,7 @@ meryl count compress k=30 threads=32 memory=128 $maternal output ERR10930362.mer
 $MERQURY/trio/hapmers.sh ERR10930361.meryl ERR10930362.meryl
 verkko -d ERR61ERR62ERR63 --hifi /home/sablokg/scratch/grapevineassemblies/verkkoassemblyparental/*.fastq.gz --hap-kmers ERR10930361.meryl ERR10930362.meryl trio
 ```
-### invoking the indivual haplotype assembly using the hifiasm assembly parameters
+> invoking the indivual haplotype assembly using the hifiasm assembly parameters
 ```
 #!/bin/bash
 #SBATCH --partition=all
@@ -131,7 +129,7 @@ hifiasm -o ERR10930362.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR1093036
 hifiasm -o ERR10930363.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq 2> ERR10930363.log
 hifiasm -o ERR10930364.asm -l0 /work/sablok/grapevineassemblies/fastq/ERR10930364.fastq 2> ERR10930364.log
 ```
-### invoking the indivual haplotype assembly using the verkko assembly parameters
+> invoking the indivual haplotype assembly using the verkko assembly parameters
 ```
 #!/bin/bash
 #SBATCH --partition=all
@@ -158,7 +156,7 @@ verkko -d ERR10930362ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR109303
 verkko -d ERR10930363ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
 verkko -d ERR10930364ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR10930364.fastq
 ```
-### busco evaluation of the assemblies
+> busco evaluation of the assemblies
 ```
 #!/bin/bash
 #SBATCH --partition=all
@@ -176,4 +174,12 @@ busco -i ERR10930361ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930361ASM.bus
 busco -i ERR10930362ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930362ASM.busco -m geno
 busco -i ERR10930363ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930363ASM.busco -m geno
 busco -i ERR10930364ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930364ASM.busco -m geno
+```
+> compleasm runs using the vitis data. place the vitis file in the assembly folder
+ ```
+for i in *.fasta; do echo compleasm.py protein -p $vitis_file -l viridiplantae_odb10 -t $THREADS -o "${i%.*}".protein.eval.vitis; done
+python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930361ASM.protein.eval.vitis
+python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930362ASM.protein.eval.vitis
+python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930363ASM.protein.eval.vitis
+python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930364ASM.protein.eval.vitis
 ```
