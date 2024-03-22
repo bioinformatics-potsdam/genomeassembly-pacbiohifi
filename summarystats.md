@@ -1,6 +1,4 @@
-#### summary stats of the genome assembly trials done and evaluated for the BOLERO project 
-#### verkko assembly evaluation
-#### both the indiviual reports and the  summary table is present below for both the evaluation. 
+#### summary stats of the genome assembly trials done and evaluated for the BOLERO project. verkko assembly evaluation. both the indiviual reports and the  summary table is present below for both the evaluation. 
 ### accession for the indiviual: ERR10930361ASM.busco
 ```
 # BUSCO was run in mode: genome
