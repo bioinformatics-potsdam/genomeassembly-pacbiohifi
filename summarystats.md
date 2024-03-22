@@ -92,7 +92,7 @@ I:0.00%, 0
 M:0.00%, 0 
 N:425
 ```
->> completeness based on compleasm ( Total BUSCO searched 425) 
+#### completeness based on compleasm ( Total BUSCO searched 425) 
 | ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
 | -------------- | --------------- | -------------- | --------------- |
 |     14.12%, 60           |  6.12%, 26              |       13.18%, 56         |      12.71%, 54          |
@@ -102,7 +102,7 @@ N:425
 |           0.00%, 0     |         0.00%, 0       |           0.00%, 0     |           0.00%, 0     |
 |            425    |            425    |          425      |        425        |
 
->> completeness based on BUSCO ( Total BUSCO searched 425) 
+#### completeness based on BUSCO ( Total BUSCO searched 425) 
 
 | Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M)
 | -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |
@@ -111,7 +111,7 @@ N:425
 | ERR10930361ASM | 423 | 62 | 361 | 1 | 1 
 | ERR10930361ASM | 423 | 56 | 367 | 1 | 1  
 
->> reference genome protein comparison 
+#### reference genome protein comparison 
 | ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
 | -------------- | --------------- | -------------- | --------------- |
 |   65.88%, 280          |  65.88%, 280           |       65.88%, 280        |      65.88%, 280       |
