@@ -46,7 +46,7 @@ complete analysis and report generation for the genome assembly coming from the 
 Once the download is finished, map the assembled scaffolds to the vitis genome for checking out the mapping coverage of the assembled genome.The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
 
 ### Genome Analysis and Project Summary
-> The project image summary for the June presentation is loated at and by that time, i aim to establish the genome annotation with the complete hint generation and will build the RUST client application.\ 
+> The project image summary for the June presentation is loated at and by that time, i aim to establish the genome annotation with the complete hint generation and will build the RUST client application.
 
 ![Project summary](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png) 
 
