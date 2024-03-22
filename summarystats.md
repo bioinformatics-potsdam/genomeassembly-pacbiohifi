@@ -53,6 +53,7 @@
 ```
 ### completeness results using the compleasm first using the BUSCO using the compleasm
 ##### ERR10930361ASM
+```
 S:14.12%, 60 \
 D:85.88%, 365 \
 F:0.00%, 0 \
@@ -63,28 +64,34 @@ Download lineage: 3.39(s) \
 Run miniprot: 3259.03(s) \
 Analyze miniprot: 1381.91(s) \
 Total runtime: 4644.34(s) \
+```
 ###### ERR10930362ASM \
+```
 S:6.12%, 26 \
 D:93.65%, 398 \
 F:0.24%, 1 \
 I:0.00%, 0 \
 M:0.00%, 0 \
 N:425 \
+```
 ###### ERR10930363ASM \
+```
 S:13.18%, 56 \
 D:86.82%, 369 \
 F:0.00%, 0 \
 I:0.00%, 0 \
 M:0.00%, 0 \
 N:425 \
+```
 ###### ERR10930364ASM \
+```
 S:12.71%, 54 \
 D:87.29%, 371 \
 F:0.00%, 0 \
 I:0.00%, 0 \
 M:0.00%, 0 \
 N:425
-
+```
 ### completeness based on compleasm ( Total BUSCO searched 425) 
 
 | ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
