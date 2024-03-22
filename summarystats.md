@@ -1,12 +1,11 @@
 ### summary stats of the genome assembly trials done and evaluated for the BOLERO project 
 ### verkko assembly evaluation
+#### both the indiviual reports and the  summary table is present below for both the evaluation. 
 ### accession for the indiviual: ERR10930361ASM.busco
 ```
 # BUSCO was run in mode: genome
 # Gene predictor used: metaeuk
-
         ***** Results: *****
-
         C:99.3%[S:14.8%,D:84.5%],F:0.2%,M:0.5%,n:425       
         422     Complete BUSCOs (C)                        
         63      Complete and single-copy BUSCOs (S)        
@@ -19,9 +18,7 @@
 ```
 # BUSCO was run in mode: genome
 # Gene predictor used: metaeuk
-
         ***** Results: *****
-
         C:99.1%[S:7.3%,D:91.8%],F:0.7%,M:0.2%,n:425        
         421     Complete BUSCOs (C)                        
         31      Complete and single-copy BUSCOs (S)        
@@ -34,9 +31,7 @@
 ```
 # BUSCO was run in mode: genome
 # Gene predictor used: metaeuk
-
         ***** Results: *****
-
         C:99.5%[S:14.6%,D:84.9%],F:0.2%,M:0.3%,n:425       
         423     Complete BUSCOs (C)                        
         62      Complete and single-copy BUSCOs (S)        
@@ -49,9 +44,7 @@
 ```
 # BUSCO was run in mode: genome
 # Gene predictor used: metaeuk
-
         ***** Results: *****
-
         C:99.6%[S:13.2%,D:86.4%],F:0.2%,M:0.2%,n:425       
         423     Complete BUSCOs (C)                        
         56      Complete and single-copy BUSCOs (S)        
@@ -94,7 +87,7 @@ I:0.00%, 0 \
 M:0.00%, 0 \
 N:425
 
-### completeness based on the vitis vinifera genome using the compleasm 
+### completeness based on compleasm ( Total BUSCO searched 425) 
 
 | ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
 | -------------- | --------------- | -------------- | --------------- |
@@ -104,3 +97,12 @@ N:425
 |          0.00%, 0      |        0.00%, 0        |           0.00%, 0     |         0.00%, 0       |
 |           0.00%, 0     |         0.00%, 0       |           0.00%, 0     |           0.00%, 0     |
 |            425    |            425    |          425      |        425        |
+
+### completeness based on BUSCO ( Total BUSCO searched 425) 
+
+| Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M)
+| -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |
+|  ERR10930361ASM | 422  | 63 | 359 | 1 | 2  
+| ERR10930362ASM | 421 | 31 | 390 | 3 | 1 
+| ERR10930361ASM | 423 | 62 | 361 | 1 | 1 
+| ERR10930361ASM | 423 | 56 | 367 | 1 | 1  
