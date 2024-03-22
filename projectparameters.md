@@ -181,5 +181,21 @@ for i in *.fasta; do echo compleasm.py protein -p $vitis_file -l viridiplantae_o
 python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930361ASM.protein.eval.vitis
 python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930362ASM.protein.eval.vitis
 python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930363ASM.protein.eval.vitis
-python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930364ASM.protein.eval.vitis
+python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930364ASM.p
+rotein.eval.vitis
+```
+> if you want to see which are the duplicated genes then use this
+```
+cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }'
+cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }'
+```
+> getting the unique duplicates genes out of the annotations.
+```
+cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
+cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
+```
+> getting the unique single genes out of the annotations.
+```
+cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
+cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
 ```
