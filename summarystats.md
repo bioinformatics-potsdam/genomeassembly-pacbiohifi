@@ -94,5 +94,12 @@ I:0.00%, 0 \
 M:0.00%, 0 \
 N:425
 
-### completeness based on the vitis vinifera genome using the compleasm
+### completeness based on the vitis vinifera genome using the compleasm 
 
+| ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
+|     14.12%, 60           |  6.12%, 26              |       13.18%, 56         |      12.71%, 54          |
+|       85.88%, 365         |    93.65%, 398            |     86.82%, 369            |    87.29%, 371            |
+|        0.00%, 0        |          0.24%, 1      |         0.00%, 0       |         0.00%, 0       |
+|          0.00%, 0      |        0.00%, 0        |           0.00%, 0     |         0.00%, 0       |
+|           0.00%, 0     |         0.00%, 0       |           0.00%, 0     |           0.00%, 0     |
+|            425    |            425    |          425      |        425        |
