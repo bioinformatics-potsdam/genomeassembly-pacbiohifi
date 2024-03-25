@@ -54,7 +54,8 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 > The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) \
 > The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) \
 > The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) \
-> All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md)
+> All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) \
+> The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md)
 
 >> This week all the rest of the hifiasm results will be added, one finished and two of them left. After that a complete automation along with the Jekyll webfront for the BOLERO project and moving on with the genome annotations and pangenome constructions. In addition to the grapevine, i will do the complete analysis also with the Arabidopsis PacBioHifi reads, so that we have a benchmark. At the annotation level, there is no benchmark and it is a complete analysis from the setup of the hints to the protein mapping and generating high quality connecting links for the annotations.
 
