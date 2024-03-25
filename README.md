@@ -32,11 +32,11 @@ complete analysis and report generation for the genome assembly coming from the 
 > [HAST assembler](https://github.com/BGI-Qingdao/HAST) 
 
 ### Genome assembly evaluation
-[QUAST](https://github.com/ablab/quast) \
-[BUSCO](https://github.com/metashot/busco) \
-[BUSCO docker](https://gitlab.com/ezlab/busco) \
-[BUSCO Read](https://busco.ezlab.org/) \
-[Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
+> [QUAST](https://github.com/ablab/quast) \
+> [BUSCO](https://github.com/metashot/busco) \
+> [BUSCO docker](https://gitlab.com/ezlab/busco) \
+> [BUSCO Read](https://busco.ezlab.org/) \
+> [Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
 
 ### Reference genome based evaluation
 [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach \
