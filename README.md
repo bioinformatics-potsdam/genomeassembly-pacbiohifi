@@ -57,6 +57,48 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 > All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) \
 > The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md)
 
+###### the files for the genome assembly and where to find them: 
+```
+├── [4.0K]  awk_scripts
+│   ├── [2.0K]  gawksum.awk
+│   └── [5.5K]  pacbiohifi.awk
+├── [8.8K]  bolero_bioinfo_shared_with_me_cirad.docx
+├── [4.0K]  installation
+│   └── [ 815]  compleasm.yml
+├── [1.4K]  installation.md
+├── [1.0K]  LICENSE
+├── [8.7K]  pacbioassembly.sh
+├── [8.9K]  projectparameters.md
+├── [3.9K]  projectsummary.md
+├── [ 178]  projecttables.md
+├── [134K]  projectupdate.png
+├── [4.0K]  python_scripts
+│   ├── [ 895]  coverage.py
+│   ├── [ 219]  extractingdiagonalinformation.py
+│   ├── [1.3K]  pacbiohifishiny.py
+│   └── [7.7K]  pafplotter.py
+├── [  97]  quastreports.md
+├── [4.0K]  reading
+│   ├── [224K]  busco.pdf
+│   ├── [953K]  compleasm.pdf
+│   ├── [2.8M]  grapevine.pdf
+│   ├── [3.6M]  hifiasm.pdf
+│   ├── [8.4M]  kat_kmer_assessment.pdf
+│   ├── [223K]  quast.pdf
+│   └── [7.6M]  verkko.pdf
+├── [8.3K]  README.md
+├── [1.6K]  referenceevaluation.md
+├── [4.0K]  r_scripts
+│   ├── [ 382]  summaryfunctionhifi.R
+│   └── [ 424]  summarylengthhifi.R
+├── [4.0K]  shell_scripts
+├── [4.8K]  summarystats.md
+├── [4.0K]  test_sample_code_files
+│   └── [1.1M]  sample.paf
+└── [4.0K]  vitis_files
+    └── [8.9M]  Vitis_vinifera.PN40024.v4.pep.all.fa.gz
+```
+
 <p align = "left">
    <h3>
        <b>This is running and the final merge report will be updated.</b>
