@@ -56,6 +56,7 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 > The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) \
 > All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md)
 
+>> This week all the rest of the hifiasm results will be added, one finished and two of them left. After that a complete automation along with the Jekyll webfront for the BOLERO project and moving on with the genome annotations and pangenome constructions. 
 
 ### Meeting scheduled for June 2024 
 
