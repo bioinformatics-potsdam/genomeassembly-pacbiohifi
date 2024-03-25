@@ -58,9 +58,9 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 > The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md)
 
 <p align = "left">
-   <h>
+   <h1>
       This is running and the final merge report will be updated.
-   </h>
+   </h1>
 <b>
    This week all the rest of the hifiasm results will be added, one finished and two of them left. After that a complete automation along with the Jekyll webfront for the BOLERO project and moving on with the genome annotations and pangenome    constructions. In addition to the grapevine, i will do the complete analysis also with the Arabidopsis PacBioHifi reads, so that we have a benchmark. At the annotation level, there is no benchmark and it is a complete analysis from the setup of the hints to the protein mapping and generating high quality connecting links for the annotations.
 </b>
