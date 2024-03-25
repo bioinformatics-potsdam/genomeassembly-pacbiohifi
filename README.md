@@ -59,16 +59,16 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 
 <p align = "left">
    <h3>
-       This is running and the final merge report will be updated.
+       <b>This is running and the final merge report will be updated.</b>
    </h3>
    <h4>
-      A github action is implemented which will generate the complete slurm analysis for both the servers with the original data files name. </br>
+      <b> A github action is implemented which will generate the complete slurm analysis for both the servers with the original data files name.</b> </br>
    </h4> 
    <d1>
       <dt>List of actions</dt>
-         <dd> hifiasm stats to be added </dd>
-            <dd> <i> arabidopsis thaliana analysis to be added for comparison</i></dd>
-              <dd> a jekyll webfront for the display of all the information </dd>
+         <dd> <b> hifiasm stats to be added </b> </dd>
+            <dd> <b> <i> arabidopsis thaliana </i> analysis to be added for comparison  </b> </dd>
+              <dd> <b> a jekyll webfront for the display of all the information </b> </dd>
    </d1>
 <b>
 </b>
