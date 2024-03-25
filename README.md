@@ -67,9 +67,9 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
    <d1>
       <dt>List of actions</dt>
          <dd> hifiasm stats to be added </dd>
-         <dd> <i> arabidopsis thaliana analysis to be added for comparison</i></dd>
-         <dd> a jekyll webfront for the display of all the information </dd>
-   </dd>
+            <dd> <i> arabidopsis thaliana analysis to be added for comparison</i></dd>
+              <dd> a jekyll webfront for the display of all the information </dd>
+   </d1>
 <b>
 </b>
 ### Meeting scheduled for June 2024 
