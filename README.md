@@ -60,7 +60,7 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 <p align = "left">
    <h>
       This is running and the final merge report will be updated.
-   </h1>
+   </h>
 <b>
    This week all the rest of the hifiasm results will be added, one finished and two of them left. After that a complete automation along with the Jekyll webfront for the BOLERO project and moving on with the genome annotations and pangenome    constructions. In addition to the grapevine, i will do the complete analysis also with the Arabidopsis PacBioHifi reads, so that we have a benchmark. At the annotation level, there is no benchmark and it is a complete analysis from the setup of the hints to the protein mapping and generating high quality connecting links for the annotations.
 </b>
