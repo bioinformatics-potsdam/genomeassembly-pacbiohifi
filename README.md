@@ -54,7 +54,8 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 > The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) \
 > The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) \
 > All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) \
-> The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md)
+> The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md) \
+> The hic documentation along with the parameters and how to optimize are located at: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md)
 
 ###### the files for the genome assembly and where to find them: 
 ```
