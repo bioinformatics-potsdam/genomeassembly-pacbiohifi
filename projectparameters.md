@@ -184,6 +184,11 @@ python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb
 python3 compleasm.py protein -p vitis_PN40024.v4.pep.all.fa -l viridiplantae_odb10 -t 10 -o ERR10930364ASM.p
 rotein.eval.vitis
 ```
+> there is an alternative way to run the compleasm and that is by providing the proteins of the reference genome and in this case vitis and how to do it is given below:
+```
+miniprot --trans -u -I --outs=0.95 --gff -t $THREADS ref_file vitis.pep.fasta > aligned.gff
+compleasm.py analyze align.gff -o output_dir -l viridiplantae_odb10 -t 8
+```
 > if you want to see which are the duplicated genes then use this
 ```
 cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }'
