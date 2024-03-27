@@ -84,20 +84,12 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 ├── verkko_quast_reports
 └── vitis_files
 ```
-<p align = "left">
-   <h3>
-       <b>This is running and the final merge report will be updated.</b>
-   </h3>
-   <h4>
-      <b> A github action is implemented which will generate the complete slurm analysis for both the servers with the original data files name.</b> </br>
-   </h4> 
-   <d1>
-      <dt>List of actions</dt>
-            <dd> <b> <i> arabidopsis thaliana </i> analysis to be added for comparison  </b> </dd>
-              <dd> <b> a jekyll webfront for the display of all the information </b> </dd>
-   </d1>
-<b>
-</b>
+##### for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well. These are diploid samples sequenced using the PacBioHifi reads.
+
+```
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.fastq.gz
+```
 
 ### Meeting scheduled for June 2024 
 
