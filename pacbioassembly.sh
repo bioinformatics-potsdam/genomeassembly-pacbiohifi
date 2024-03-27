@@ -7,8 +7,8 @@
 # Date: 2024-3-11
 ##################
                      echo "there are two assembly configurations available, either perform the assembly"
-            echo "on the single reads or perform the assembly using the paternal and the maternal sequences"
-            echo "you can easily integrate this into the snakemake patterns"
+              echo "on the single reads or perform the assembly using the paternal and the maternal sequences"
+                         echo "you can easily integrate this into the snakemake patterns"
 read -r -p "please select the option:" option
 read -r -p "please provide the path to the directory on the slurmserver where the fastq files are located:" directory
 read -r -p "please provide the path to the scratch directory on the slurmserver where the fastq files will be analyzed:" scratch
@@ -72,6 +72,7 @@ if [[ "${configuration}" == "singlereads"  \
    echo "the hifiassembly using the hifiasm has been completed" 
    echo "thank you for using the hifi cluster computing services"
 fi
+
 if [[ ${configuration} == "singlereads" && "${option}" == "all" && \
 		        ${directory} && ${scratch} && ${fetchfile} ]]; then
    echo "writing the configuration files for the slurmruns and fetching the files from the fetch link provided"
@@ -129,6 +130,7 @@ if [[ ${configuration} == "singlereads" && "${option}" == "all" && \
    echo "the hifiassembly using the hifiasm has been completed" 
    echo "thank you for using the hifi cluster computing services"
 fi
+
 if [[ ${configuration} == "parents" && "${option}" == "all" && \
 		        ${directory} && ${scratch} ]]; then
    module list 
@@ -191,8 +193,8 @@ if [[ ${configuration} == "parents" && "${option}" == "all" && \
    for i in ${#arraystorage[*]}; 
       do 
          echo meryl count compress k="${i}" threads="${cpus-per-task}" memory="${mem}" "${maternal}"/*.fastq.gz output maternalkmers."${i}".meryl
-         echo meryl count compress k="{i}" threads="${cpus-per-task}" memory="${mem}" "${paternal}"/*.fastq.gz output paternalkmers."${i}".meryl
-         echo meryl count compress k="{i}" threads="${cpus-per-task}" memory="${mem}" "${child}"/*.fastq.gz output paternalkmers."${i}".meryl
+         echo meryl count compress k="${i}" threads="${cpus-per-task}" memory="${mem}" "${paternal}"/*.fastq.gz output paternalkmers."${i}".meryl
+         echo meryl count compress k="${i}" threads="${cpus-per-task}" memory="${mem}" "${child}"/*.fastq.gz output paternalkmers."${i}".meryl
       done >> sotringvariablekmers.sh 
    if [[ -z $(cat storingvariablekmers.sh | wc -l ) ]]; then
       echo "variables are not properly formatted and stored"
