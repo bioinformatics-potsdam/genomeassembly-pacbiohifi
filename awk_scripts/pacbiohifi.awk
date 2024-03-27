@@ -10,10 +10,15 @@ gem install youplot
 >> [test coverage file](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/test.cov) \
 #### example file the paf alignments are located at
 >> [paf alignment file](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/sample.paf) \
-# a easy to add option saying that if the file is not given then take the default file at this location in the github action. 
+# a easy to add option saying that if the file is not given then take the default file at this location in the github action. \
+
 if [[ $1 == "" ]]; then
-    $1=https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/test.cov
+    $1="https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/test.cov"
 fi
+
+if [[ $1 == "" ]]; then 
+    $1="https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/sample.paf"
+fi 
 
 # coverage filter
 for i in $(ls *.cov); \ 
