@@ -13,7 +13,7 @@ summary <- function(hifiinfile, coverage){
 
 # a deafcto function for pulling the file directly from the bucket is also present below and it tell where the file is
 summary <- function(hifiinfile, coverage){
-    if !hifiinfile {
+    if (!hifiinfile) {
         print(paste0("a sample file is present at the https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/test.cov"))
     } 
     else {
