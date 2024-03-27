@@ -50,6 +50,7 @@ python3 compleasm.py run -a ERR10930361ASM.fasta -o ERR10930361ASM -l viridiplan
 - cd genomeassembly
 - Edit the config.yaml for an accession (Path to fastq.gz file and reference assembly for ragtag). 3 mode are available \
         (default for an accession, trio (with mother and father raw data) or hic (but for after because Nestlé made also theses datas))
-- Edit the profile/config.yaml (for Slurm parameters, partition and memory). Section default-resources and set-resources.
+- Edit the profile/config.yaml (for Slurm parameters, partition and memory).
+Section default-resources and set-resources.
 - And snakelike.sh (for singularity and snakemake if needed)
 ```
