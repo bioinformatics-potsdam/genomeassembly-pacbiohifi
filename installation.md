@@ -44,7 +44,7 @@ export PATH="WORKDIR_OF_MINPROT_INSTALLATION":$PATH \
 source activate compleasm \
 python3 compleasm.py run -a ERR10930361ASM.fasta -o ERR10930361ASM -l viridiplantae_odb10 \
 ```
-# Gaetan instructions for setting up the genomeasm4pg on the Universitat Potsdam
+#### Gaetan instructions for setting up the genomeasm4pg on the Universitat Potsdam
 ```
 - Clone the reporistory (git clone https://gitlab.cirad.fr/agap/workflows/genomeassembly)
 - cd genomeassembly
