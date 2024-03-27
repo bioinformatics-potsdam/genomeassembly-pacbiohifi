@@ -44,3 +44,12 @@ export PATH="WORKDIR_OF_MINPROT_INSTALLATION":$PATH \
 source activate compleasm \
 python3 compleasm.py run -a ERR10930361ASM.fasta -o ERR10930361ASM -l viridiplantae_odb10 \
 ```
+# Gaetan instructions for setting up the genomeasm4pg on the Universitat Potsdam
+```
+- Clone the reporistory (git clone https://gitlab.cirad.fr/agap/workflows/genomeassembly)
+- cd genomeassembly
+- Edit the config.yaml for an accession (Path to fastq.gz file and reference assembly for ragtag). 3 mode are available \
+        (default for an accession, trio (with mother and father raw data) or hic (but for after because Nestlé made also theses datas))
+- Edit the profile/config.yaml (for Slurm parameters, partition and memory). Section default-resources and set-resources.
+- And snakelike.sh (for singularity and snakemake if needed)
+```
