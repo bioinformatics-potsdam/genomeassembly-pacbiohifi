@@ -12,7 +12,7 @@ summarylength("ERR10930361ASM_assembly.hifi-coverage.csv", 5000) -> total 20505 
 
 # a function below will give the default file location. 
 summary <- function(hifiinfile, scaffoldlength){
-    if !hifiinfile {
+    if (!hifiinfile) {
         print(paste0("a sample file is present at the 
                         https://github.com/sablokgaurav/genomeassembly_standards/blob/main/test_sample_code_files/test.cov"))
     } 
