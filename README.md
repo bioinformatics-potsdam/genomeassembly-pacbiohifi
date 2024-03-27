@@ -61,15 +61,20 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 ```
 ├── awk_scripts
 ├── hifiasm_busco_runs
-         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+         ###### hifiasm with set to -l0 needs further optimization \
+                     as the number of the scaffolds can be reduced further. 
 ├── hifiasm_compleasm_runs
-         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+         ###### hifiasm with set to -l0 needs further optimization \
+                        as the number of the scaffolds can be reduced further. 
 ├── hifiasm_fasta_files
-         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+         ###### hifiasm with set to -l0 needs further optimization \
+                     as the number of the scaffolds can be reduced further. 
 ├── hifiasm_quast
-         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+         ###### hifiasm with set to -l0 needs further optimization \
+                     as the number of the scaffolds can be reduced further. 
 ├── hifiasm_quast_reports
-         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+         ###### hifiasm with set to -l0 needs further optimization \
+                  as the number of the scaffolds can be reduced further. 
 ├── reading
 ├── r_scripts
 ├── test_sample_code_files
