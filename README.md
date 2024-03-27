@@ -100,8 +100,6 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 <b>
 </b>
 
-### I finished coding the webfront for the BOLERO project also and it will be uplaoded to the same. A static site which will list all the bioinformatics for the BOLERO project. 
-   
 ### Meeting scheduled for June 2024 
 
 Gaurav Sablok \
