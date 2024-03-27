@@ -57,31 +57,21 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 > The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md) \
 > The hic documentation along with the parameters and how to optimize are located at: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md)
 
-###### the files for the genome assembly and where to find them: 
+###### the files for the genome assembly and where to find them: only directories are listed and with in them the relative content is there. This is a high order configuration for the genomeassembly standards. Where the optimization is needed, ran the optimization on only two of the haplotypes so that we can have a quick comparison to see as compared to running on all of them.
 ```
 ├── awk_scripts
-├── bolero_bioinfo_shared_with_me_cirad.docx
-├── hicdocumentation.md
-├── hifiasm_busco_runs ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
-├── hifiasm_compleasm_runs  ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
-├── hifiasm_fasta_files  ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
-├── hifiasm_quast  ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
-├── hifiasm_quast_reports  ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
-├── installation
-├── installation.md
-├── LICENSE
-├── pacbioassembly.sh
-├── projectparameters.md
-├── projectsummary.md
-├── projecttables.md
-├── projectupdate.png
-├── python_scripts
-├── quastreports.md
+├── hifiasm_busco_runs
+         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+├── hifiasm_compleasm_runs
+         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+├── hifiasm_fasta_files
+         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+├── hifiasm_quast
+         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
+├── hifiasm_quast_reports
+         ###### hifiasm with set to -l0 needs further optimization as the number of the scaffolds can be reduced further. 
 ├── reading
-├── README.md
-├── referenceevaluation.md
 ├── r_scripts
-├── summarystats.md
 ├── test_sample_code_files
 ├── verkko_busco_runs
 ├── verkko_coverage_files
