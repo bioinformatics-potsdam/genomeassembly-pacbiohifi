@@ -93,7 +93,6 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
    </h4> 
    <d1>
       <dt>List of actions</dt>
-         <dd> <b> hifiasm stats to be added </b> </dd>
             <dd> <b> <i> arabidopsis thaliana </i> analysis to be added for comparison  </b> </dd>
               <dd> <b> a jekyll webfront for the display of all the information </b> </dd>
    </d1>
