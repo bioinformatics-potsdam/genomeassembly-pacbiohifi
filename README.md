@@ -19,8 +19,8 @@
    
    For the assembly of the pangenome, we have been standardizing the approaches for the PacBioHifi  and the Oxford Nanopore data, [assembly_pangenome](https://github.com/sablokgaurav/pangraphs-pacbio-nanopore-genome-assembly), allowing the assembly of the genomes, genome polishing and the comparative assessment of the genomes. To supplement the graph based pangenome Dr. Sablok also coded a new python package called as graphanalyzer: [graphanalyzer](https://github.com/sablokgaurav/graphanalyzer), which analyses all types of the graph alignments and the connections from the graph genome. Dr. Sablok started implementing the genome analysis and finished the first analysis for the PacbIo hifi reads [pacbiohifi_assembly](https://github.com/sablokgaurav/pacbiohifi-universitat-potsdam) coming from a sample datasets to integrate and check the assurance of the developmental computational pipeline. Dr. Sablok has evaluated three state of the art methods for the PacBioHifi assembly such as Verkko, HifiASM, genomeASM4pg and the results from the Verkko for one of the indiviual is given below. Additional analysis libraries and packages that have been developed by Dr. Sablok for the analysis of the pacbiohifi reads for the genome assembly are given below: 
    
->> Package 1. [pacbio_hifi assembly](https://github.com/sablokgaurav/pacbiohifi-universitat-potsdam) \
->> Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk-awk-paf-alignments)
+> Package 1. [pacbio_hifi assembly](https://github.com/sablokgaurav/pacbiohifi-universitat-potsdam) \
+> Package 2. [pacbio_hifi_assembly_genome](https://github.com/sablokgaurav/gawk-awk-paf-alignments)
 
 ##### repoducibility of the project goals.
 > to reproduce this pipeline, check the installation folder and there are cutom installation YAML files for each of the working environment. install the working environment and then you can reproduce the same. 
@@ -87,13 +87,11 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 ├── verkko_quast_reports
 └── vitis_files
 ```
-##### for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well. These are diploid samples sequenced using the PacBioHifi reads.
-
+##### for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well. These are diploid samples sequenced using the PacBioHifi reads.\
 ```
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.fastq.gz
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.fastq.gz
 ```
-
 ### Meeting scheduled for June 2024 
 
 Gaurav Sablok \
