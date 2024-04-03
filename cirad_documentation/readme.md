@@ -1,6 +1,6 @@
-# gaetan suggestion to get the genomeasm working on the Universitat Potsdam 
-> # However, this will not work so i created a conda environment and pull the snakemake and the genomeasm with the singularity with in conda environment.
-> # getting it working on the Universitat Potsdam
+#### gaetan suggestion to get the genomeasm working on the Universitat Potsdam 
+> ##### However, this will not work so i created a conda environment and pull the snakemake and the genomeasm with the singularity with in conda environment.
+> ##### getting it working on the Universitat Potsdam
 
 Clone the reporistory (git clone https://gitlab.cirad.fr/agap/workflows/genomeassembly)
 - cd genomeassembly
