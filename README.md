@@ -94,10 +94,10 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.f
 ```
 
 ##### Conclusion
-- Verkko assembly is looking great and so do the hifiasm and the genomeasm. \
-- It all comes down to the actual data that we will have from the Nestle. \
-- best part of doing this that we have everything ready before the actual data comes. \
-- I am doing this for the genome annotation so that we have our measures defined ahead of the data. \
+- Verkko assembly is looking great and so do the hifiasm and the genomeasm. 
+- It all comes down to the actual data that we will have from the Nestle. 
+- Best part of doing this that we have everything ready before the actual data comes and this will save me and all of us a lot of time from writing the analysis pipelines to the downstream analysis. Thank you Manuel and Gaetan for the discussion. 
+- I am doing this for the genome annotation so that we have our measures defined ahead of the data. 
 - Coding additional code that will be used for the project for both the genome assembly and the genome annotation.
 
 ### Meeting scheduled for June 2024 
