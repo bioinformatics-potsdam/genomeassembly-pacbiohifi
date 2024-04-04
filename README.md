@@ -26,20 +26,20 @@
 > to reproduce this pipeline, check the installation folder and there are cutom installation YAML files for each of the working environment. install the working environment and then you can reproduce the same. 
 
 #### Genome assembly packages used for the assembly
-- [hifiasm](https://github.com/chhylp123/hifiasm) \
-- [Meryl](https://github.com/marbl/meryl) \
-- [Merqury](https://github.com/marbl/merqury) \
+- [hifiasm](https://github.com/chhylp123/hifiasm) 
+- [Meryl](https://github.com/marbl/meryl) 
+- [Merqury](https://github.com/marbl/merqury) 
 - [Verkko](https://github.com/marbl/verkko) 
 
 #### Gaetan and Manuel this is a new haplotype assembler and let me know if we want to try this out.
 - [HAST assembler](https://github.com/BGI-Qingdao/HAST) 
 
 #### Genome assembly evaluation
-- [QUAST](https://github.com/ablab/quast) \
-- [BUSCO](https://github.com/metashot/busco) \
-- [BUSCO docker](https://gitlab.com/ezlab/busco) \
-- [BUSCO Read](https://busco.ezlab.org/) \
-- [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach \
+- [QUAST](https://github.com/ablab/quast) 
+- [BUSCO](https://github.com/metashot/busco) 
+- [BUSCO docker](https://gitlab.com/ezlab/busco) 
+- [BUSCO Read](https://busco.ezlab.org/) 
+- [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach 
 - [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach
 
 #### Additional new approaches integrated into the assembly project for the coffee genome.  
@@ -93,7 +93,7 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.f
 
 ##### Conclusion
 - Verkko assembly is looking great and so do the hifiasm and the genomeasm. 
-- It all comes down to the actual data that we will have from the Nestle. 
+- It all comes down to the actual data that we will have from the Nestle. I cant speculate that these parameters will fit but fore sure that we only need to do a little optimization in the parameters as dont need to start it from the start and also how to make the information conclusive is in front of all, so later we dont have to think when the actual data comes. Since i have added the example files in all the pipelines and the codes, so everything is reproducible.  
 - Best part of doing this that we have everything ready before the actual data comes and this will save me and all of us a lot of time from writing the analysis pipelines to the downstream analysis. Thank you Manuel and Gaetan for the discussion. 
 - I am doing this for the genome annotation so that we have our measures defined ahead of the data. 
 - Coding additional code that will be used for the project for both the genome assembly and the genome annotation.
