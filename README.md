@@ -85,7 +85,7 @@ The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genom
 ├── verkko_quast_reports
 └── vitis_files
 ```
-##### for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well. These are diploid samples sequenced using the PacBioHifi reads.\
+##### for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well. These are diploid samples sequenced using the PacBioHifi reads.
 ```
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.fastq.gz
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.fastq.gz
