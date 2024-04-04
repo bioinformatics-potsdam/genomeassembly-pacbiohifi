@@ -2,14 +2,15 @@
 <div align = "justify"> complete analysis and report generation for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. I continue to update this, so that when there is an update, simply fork this and an update is autoclone in your github profile. This will save us a lot of time and also the email exchange and tracking all those. This also includes the shipping of the code to the hpc clusters and everything. I will later think of adding the Github actions to make it directly send to the clusters. The project summary is present in the > projectsummary.md. It is a markdown document and easily editable. If you want then i can convert this into the Tex for the writeup. If you want then i can write the project summary here also but it will look dirty. </div>
 
 #### Bolero Project Report:
-> January - March, 2024
-> Project Members: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc, Gaurav Sablok 
->> Organizations: Universitat Potsdam, CIRAD ( Bioinformatics )
->>> BOLERO Bioinformatics
->>> Project Member Hire and Official Project Meet: 
-> Resource Setup
-   >> [A computing cluster with the 256GB or more RAM and multi node cluster computation at Universitat Potsdam](https://docs.hpc.uni-potsdam.de/) \
-   >> [A computing cluster account with 256GB or more and multi node cluster computation at MESO cluster](https://meso-lr.umontpellier.fr/documentation-utilisateurs/)
+- January - March, 2024
+- Project Members: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc, Gaurav Sablok
+ -- Organizations: Universitat Potsdam, CIRAD ( Bioinformatics )
+ -- BOLERO Bioinformatics
+  --- Project Member Hire and Official Project Meet: 
+
+- Resource Setup
+   > [A computing cluster with the 256GB or more RAM and multi node cluster computation at Universitat Potsdam](https://docs.hpc.uni-potsdam.de/) \
+   > [A computing cluster account with 256GB or more and multi node cluster computation at MESO cluster](https://meso-lr.umontpellier.fr/documentation-utilisateurs/)
    
 ### Summary report
 <div align = "justify"> The project BOLERO started with the appointment of the postdoc Dr. Gaurav Sablok on 15th January, 2024 at the Bioinformatics Department, University of Potsdam. Upon arrival, Dr. Sablok had a Zoom discussion with Dr. Manuel Ruiz and Dr. Gaetan Droc from CIRAD, who will strongly collaborate in the context of pangenome assembly. Since data are already in sequencing phase (Nestle), Dr. Sablok started to generate the pipelines necessary for the pangenomic analysis; in addition, since metagenomics data play a central role in BOLERO, particularly in the context of metabolic model development, Dr. Sablok has also been involved in setting up the computational pipelines for metagenomics analysis. The complete pipeline for analysis of the genomes and the pangenome is in the process of generation following complete layout for the project BOLERO. The latter is available for the visualization and all of the code are the final release version, tested with a datasets from CIRAD. 
