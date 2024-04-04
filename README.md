@@ -26,39 +26,37 @@
 > to reproduce this pipeline, check the installation folder and there are cutom installation YAML files for each of the working environment. install the working environment and then you can reproduce the same. 
 
 #### Genome assembly packages used for the assembly
-> [hifiasm](https://github.com/chhylp123/hifiasm) \
-> [Meryl](https://github.com/marbl/meryl) \
-> [Merqury](https://github.com/marbl/merqury) \
-> [Verkko](https://github.com/marbl/verkko) 
-#### Gaetan and Manuel this is a new ahplotype assembler and let me know if we want to try this out.
-> [HAST assembler](https://github.com/BGI-Qingdao/HAST) 
+- [hifiasm](https://github.com/chhylp123/hifiasm) \
+- [Meryl](https://github.com/marbl/meryl) \
+- [Merqury](https://github.com/marbl/merqury) \
+- [Verkko](https://github.com/marbl/verkko) 
+
+#### Gaetan and Manuel this is a new haplotype assembler and let me know if we want to try this out.
+- [HAST assembler](https://github.com/BGI-Qingdao/HAST) 
 
 #### Genome assembly evaluation
-> [QUAST](https://github.com/ablab/quast) \
-> [BUSCO](https://github.com/metashot/busco) \
-> [BUSCO docker](https://gitlab.com/ezlab/busco) \
-> [BUSCO Read](https://busco.ezlab.org/) \
-> [Lastz chain alignments](https://github.com/lastz/lastz/tree/master)
-
-#### Reference genome based evaluation
-[Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach \
-[compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach
+- [QUAST](https://github.com/ablab/quast) \
+- [BUSCO](https://github.com/metashot/busco) \
+- [BUSCO docker](https://gitlab.com/ezlab/busco) \
+- [BUSCO Read](https://busco.ezlab.org/) \
+- [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach \
+- [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach
 
 #### Additional new approaches integrated into the assembly project for the coffee genome.  
-Once the download is finished, map the assembled scaffolds to the vitis genome for checking out the mapping coverage of the assembled genome.The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
+The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
 
 #### Genome Analysis and Project Summary
-> The project image summary for the June presentation is loated at and by that time, i aim to establish the genome annotation with the complete hint generation and will build the RUST client application.
+- The project image summary for the June presentation is loated at and by that time, i aim to establish the genome annotation with the complete hint generation and will build the RUST client application.
 
 ![Project summary](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png) 
 
-> The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) \
-> The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) \
-> The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) \
-> The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) \
-> All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) \
-> The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md) \
-> The hic documentation along with the parameters and how to optimize are located at: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md)
+- The entire project documentation is located at [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) \
+- The entire project parameters are located at [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) \
+- The summary evaluation for the genome assembly are located at: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) \
+- The reference evaluation approaches are present at: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) \
+- All the installation and the configuration files are located at: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) \
+- The quast reports for the assembly are located at: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md) \
+- The hic documentation along with the parameters and how to optimize are located at: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md)
 
 ###### the files for the genome assembly and where to find them: only directories are listed and with in them the relative content is there. This is a high order configuration for the genomeassembly standards. Where the optimization is needed, ran the optimization on only two of the haplotypes so that we can have a quick comparison to see as compared to running on all of them.
 ```
