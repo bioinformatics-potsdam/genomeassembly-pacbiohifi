@@ -92,6 +92,14 @@ Once the download is finished, map the assembled scaffolds to the vitis genome f
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.fastq.gz
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.fastq.gz
 ```
+
+##### Conclusion
+- Verkko assembly is looking great and so do the hifiasm and the genomeasm. \
+- It all comes down to the actual data that we will have from the Nestle. \
+- best part of doing this that we have everything ready before the actual data comes. \
+- I am doing this for the genome annotation so that we have our measures defined ahead of the data. \
+- Coding additional code that will be used for the project for both the genome assembly and the genome annotation.
+
 ### Meeting scheduled for June 2024 
 
 Gaurav Sablok \
