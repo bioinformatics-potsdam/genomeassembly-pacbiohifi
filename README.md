@@ -4,10 +4,9 @@
 #### Bolero Project Report:
 - January - March, 2024
 - Project Members: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc, Gaurav Sablok
- -- Organizations: Universitat Potsdam, CIRAD ( Bioinformatics )
- -- BOLERO Bioinformatics
-  --- Project Member Hire and Official Project Meet: 
-
+- Organizations: Universitat Potsdam, CIRAD (Bioinformatics)
+- BOLERO Bioinformatics
+- Project Member Hire and Official Project Meet: 
 - Resource Setup
    > [A computing cluster with the 256GB or more RAM and multi node cluster computation at Universitat Potsdam](https://docs.hpc.uni-potsdam.de/) \
    > [A computing cluster account with 256GB or more and multi node cluster computation at MESO cluster](https://meso-lr.umontpellier.fr/documentation-utilisateurs/)
