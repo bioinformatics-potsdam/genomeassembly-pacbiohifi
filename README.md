@@ -41,6 +41,7 @@
 - [BUSCO Read](https://busco.ezlab.org/) 
 - [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach 
 - [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach
+- [blobtoolkit](https://github.com/blobtoolkit/blobtoolkit)
 
 #### Additional new approaches integrated into the assembly project for the coffee genome.  
 The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
