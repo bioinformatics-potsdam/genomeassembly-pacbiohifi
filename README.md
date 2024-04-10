@@ -91,15 +91,6 @@ The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genom
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.fastq.gz
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.fastq.gz
 ```
-
-##### Conclusion
-- Verkko assembly is looking great and so do the hifiasm and the genomeasm. 
-- It all comes down to the actual data that we will have from the Nestle. I cant speculate that these parameters will fit but for sure that we only need to do a little optimization in the parameters as dont need to start it from the start and also how to make the information conclusive is in front of all, so later we dont have to think when the actual data comes. Since i have added the example files in all the pipelines and the codes, so everything is reproducible.
-- If i look at the *Arabidopsis* genome assembly which i completed using the verkko and the hifiasm then those are the same results that were mentioned in the original arabidopsis paper suggesting that the assembly parameters are optimized or the diploid haplotype. The assembly size is great and cummulates to what has been reported. Number of scaffolds are much lesser and that comes to the type of the data generated and also the haplotype. 
-- **Best part of doing this that we have everything ready before the actual data comes and this will save me and all of us a lot of time from writing the analysis pipelines to the downstream analysis. Thank you Manuel and Gaetan for the discussion.** If you have any other suggestions then kindly let me know as then it will be incorporated.  
-- I am doing this for the genome annotation so that we have our measures defined ahead of the data. 
-- Coding additional code that will be used for the project for both the genome assembly and the genome annotation.
-
 ### Meeting scheduled for June 2024 
 
 Gaurav Sablok \
