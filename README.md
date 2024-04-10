@@ -42,7 +42,7 @@
 - [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach 
 - [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach
 - [blobtoolkit](https://github.com/blobtoolkit/blobtoolkit)
-
+- [gci](https://github.com/yeeus/GCI) a new estimation of the PacbioHifi for the coverage and the completeness based on the read mapping approaches. Publication in the literature folder. 
 #### Additional new approaches integrated into the assembly project for the coffee genome.  
 The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag). The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
 
