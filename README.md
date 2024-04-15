@@ -60,8 +60,7 @@
 ![genome assembly stats](https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png)
 
 #### does this work on the diplod Arabidopsis and for the comparison detailed analysis below: 
-```
-##### for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well.
+for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well.
 These are diploid samples sequenced using the PacBioHifi reads.
 ```
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.fastq.gz
