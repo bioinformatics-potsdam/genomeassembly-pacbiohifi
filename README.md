@@ -41,7 +41,7 @@
 - [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach **New approach**
 - [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach **New approach**
 - [blobtoolkit](https://github.com/blobtoolkit/blobtoolkit)
-- [gci](https://github.com/yeeus/GCI) a new estimation of the PacbioHifi for the coverage and the completeness based on the read mapping approaches. Publication in the literature folder. **New approach**
+- [gci](https://github.com/yeeus/GCI) a new estimation of the PacbioHifi for the coverage and the completeness based on the read mapping approaches. **New approach**
 
 #### Genome Analysis and Project Summary
 - The project image summary for the June presentation is loated at the following links given below:
