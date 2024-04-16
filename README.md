@@ -61,7 +61,7 @@
 
 **Haplotype assembly without the trio method: The last l3 means that for the same sample, the -l3 extensive purging was involved.**
 
-| number of contigs | ERR10930361.asm | ERR10930362.asm | ERR10930363.asm | ERR10930364.asm | ERR10930364_l3.asm |
+| contigs | ERR10930361 | ERR10930362 | ERR10930363 | ERR10930364 | ERR10930364_l3 |
 |-----------------|-----------------|-----------------|-----------------|--------------------|-------------------|
 | | 1248 | 2593 | 2611 | 1640 | 312 |
 
