@@ -54,8 +54,8 @@
 
 #### Files for the comparison of the genome assembly from the paper are: 
 
-<img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/read_count.png" alt="image" width="400" height="auto">
-<img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="400" height="auto">
+<img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/read_count.png" alt="image" width="500" height="auto" align = "center">
+<img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
 
 **Haplotype assembly without the trio method: The last l3 means that for the same sample, the -l3 extensive purging was involved.**
 
