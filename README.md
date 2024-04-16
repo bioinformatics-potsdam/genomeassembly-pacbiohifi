@@ -59,8 +59,8 @@
 ![number of sequencing reads](https://github.com/codeearn/genomeassembly-standards/blob/main/reading/read_count.png)
 ![genome assembly stats](https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png)
 
-- Haplotype assembly without the trio method:
-- The last l3 means that for the same sample, the -l3 extensive purging was involved. 
+**Haplotype assembly without the trio method: The last l3 means that for the same sample, the -l3 extensive purging was involved.**
+
 | number of contigs | ERR10930361.asm | ERR10930362.asm | ERR10930363.asm | ERR10930364.asm | ERR10930364_l3.asm |
 |-----------------|-----------------|-----------------|-----------------|--------------------|-------------------|
 | | 1248 | 2593 | 2611 | 1640 | 312 |
