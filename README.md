@@ -24,9 +24,6 @@
 - assembly_pangenome https://github.com/sablokgaurav/pangraphs-pacbio-nanopore-genome-assembly 
 - graphanalyzer https://github.com/sablokgaurav/graphanalyzer
 
-##### repoducibility of the project goals.
-> to reproduce this pipeline, check the installation folder and there are cutom installation YAML files for each of the working environment. install the working environment and then you can reproduce the same. 
-
 #### Genome assembly packages used for the assembly
 - [hifiasm](https://github.com/chhylp123/hifiasm) 
 - [Meryl](https://github.com/marbl/meryl) 
@@ -46,7 +43,7 @@
 
 #### Genome Analysis and Project Summary
 - The project image summary for the June presentation is loated at the following links given below:
- ![Project summary](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png) 
+   <img src="https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png" alt="image" width="400" height="auto">
 - Project documentation: [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) 
 - Project parameters: [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) 
 - Genome assembly summary: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) 
