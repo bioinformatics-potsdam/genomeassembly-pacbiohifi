@@ -204,3 +204,26 @@ cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ 
 cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
 cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
 ```
+> hifiasmtrio assembly
+>> ERR10930361.fastq - maternal
+>> ERR10930362.fastq - paternal
+>> ERR10930363.fastq -child
+  **the table showing the summary is on the README**
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/assemblyhifiasm/triobinningasm
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+
+export PATH=/work/sablok/grapevineassemblies/yak:$PATH
+export PATH=/work/sablok/grapevineassemblies/assemblyhifiasm/hifiasm:$PATH
+yak count -k 31 -t 32 -o parental.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930361.fastq
+yak count -k 31 -t 32 -o maternal.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930362.fastq
+hifiasm -o maternalpaternal.asm -t 32 -1 parental.yak -2 maternal.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930363.fastq 2> maternalpaternal.log
+```
