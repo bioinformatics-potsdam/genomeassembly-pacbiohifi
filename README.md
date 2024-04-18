@@ -57,12 +57,23 @@
 <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
 
 **Haplotype based assembly**
+- ERR10930361.fastq - maternal
+- ERR10930362.fastq - paternal
+- ERR10930363.fastq -child
+- The hifiasm generates two files when you do the trio binning based on the maternal and the paternal and the filenames outputted are maternalpaternal.asm.dip.hap1.p_ctg.fa and maternalpaternal.asm.dip.hap2.p_ctg.fa and hence they are long so i put the hap1 for the first one and the hap2 for the second one. 
 - The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | hap 1 | 823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
 | hap 2 | 116 |    31333120 | 502852466 |  35.28 |  23599708 |  18852907 | 10 |  16 |  0.00
+
+- busco evaluation of both the haplotypes: completeness based on BUSCO for the trio binning method ( Total BUSCO searched 425)
+
+| Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M) | Completion score |
+| -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |-------------|
+|  hap1 | 422  | 415| 7 | 1 | 2 | 99.2%
+| hap2 | 420 | 407 | 13 | 4 | 1 | 98.9%
 
 **Haplotype assembly without the trio method**: 
 - The last l3 means that for the same sample, the -l3 extensive purging was involved.
