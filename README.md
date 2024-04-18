@@ -62,6 +62,12 @@
 | contigs | ERR10930361 | ERR10930362 | ERR10930363 | ERR10930364 | ERR10930364_l3 |
 |-----------------|-----------------|-----------------|-----------------|--------------------|-------------------|
 | | 1248 | 2593 | 2611 | 1640 | 312 |
+-----------------------------------------------------------------------------------------------------------------
+*******************Haplotype based assembly **************************************
+** Haplotype based assembly **
+   **assembly name: Number of contigs**
+- maternalpaternal.asm.dip.hap1.p_ctg.fa:823
+- maternalpaternal.asm.dip.hap2.p_ctg.fa:116
 
 #### does this work on the diplod Arabidopsis and for the comparison detailed analysis below: 
 for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well.
