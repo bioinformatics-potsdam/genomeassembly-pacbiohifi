@@ -63,8 +63,8 @@
 |-----------------|-----------------|-----------------|-----------------|--------------------|-------------------|
 | | 1248 | 2593 | 2611 | 1640 | 312 |
 -----------------------------------------------------------------------------------------------------------------
-*******************Haplotype based assembly **************************************
-** Haplotype based assembly **
+**Haplotype based assembly**
+**Haplotype based assembly**
    **assembly name: Number of contigs**
 - maternalpaternal.asm.dip.hap1.p_ctg.fa:823
 - maternalpaternal.asm.dip.hap2.p_ctg.fa:116
