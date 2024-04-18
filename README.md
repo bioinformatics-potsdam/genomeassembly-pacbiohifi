@@ -74,11 +74,6 @@
 | | 1248 | 2593 | 2611 | 1640 | 312 |
 -----------------------------------------------------------------------------------------------------------------
 
-- summary present below:
-  
-
-
-
 #### does this work on the diplod Arabidopsis and for the comparison detailed analysis below: 
 for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well.
 These are diploid samples sequenced using the PacBioHifi reads.
