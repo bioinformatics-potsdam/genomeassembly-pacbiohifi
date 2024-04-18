@@ -62,6 +62,7 @@
 - ERR10930363.fastq -child
 - The hifiasm generates two files when you do the trio binning based on the maternal and the paternal and the filenames outputted are maternalpaternal.asm.dip.hap1.p_ctg.fa and maternalpaternal.asm.dip.hap2.p_ctg.fa and hence they are long so i put the hap1 for the first one and the hap2 for the second one. 
 - The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
+- All the configuration, run ime, wallclock time, nodes, cpu, memory are listed here along with the runtime for each of the analysis [project parameters](https://github.com/codeearn/genomeassembly-standards/blob/main/projectparameters.md)
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
