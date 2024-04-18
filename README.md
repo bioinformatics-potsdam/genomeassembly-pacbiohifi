@@ -65,7 +65,7 @@
 -----------------------------------------------------------------------------------------------------------------
 **Haplotype based assembly**
 **Haplotype based assembly**
-   **assembly name: Number of contigs**
+   **assembly name: Number of scaffolds**
 - maternalpaternal.asm.dip.hap1.p_ctg.fa:823
 - maternalpaternal.asm.dip.hap2.p_ctg.fa:116
 
