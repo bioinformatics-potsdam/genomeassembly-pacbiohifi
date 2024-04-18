@@ -71,10 +71,10 @@
 - The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
 - summary present below:
   
-| contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
-|---------|----------------|---------------|--------|------|-----|-----|-----|
-| hap 1 | |823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
-| hap 2 | | 116 |    31333120 | 502852466 |  35.28 |  23599708 |  18852907 | 10 |  16 |  0.00
+| haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
+|---------|----------------|---------------|--------|------|-----|-----|-----|------------|
+| hap 1 | 823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
+| hap 2 | 116 |    31333120 | 502852466 |  35.28 |  23599708 |  18852907 | 10 |  16 |  0.00
 
 
 #### does this work on the diplod Arabidopsis and for the comparison detailed analysis below: 
