@@ -3,7 +3,8 @@
 
 #### Bolero Project Report:
 - January - March, 2024
-- Project Members: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc, Gaurav Sablok
+- Project Manager and Organizers: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc
+- Project Bioinformatician: Gaurav Sablok
 - Organizations: Universitat Potsdam, CIRAD (Bioinformatics)
 - BOLERO Bioinformatics
 - Project Member Hire and Official Project Meet: 
