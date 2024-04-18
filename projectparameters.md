@@ -203,11 +203,18 @@ cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ 
 ```
 cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
 cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
-```
-> hifiasmtrio assembly
->> ERR10930361.fastq - maternal
->> ERR10930362.fastq - paternal
->> ERR10930363.fastq -child
+``` C:98.9%[S:95.8%,D:3.1%],F:0.9%,M:0.2%,n:425        
+        420     Complete BUSCOs (C)                        
+        407     Complete and single-copy BUSCOs (S)        
+        13      Complete and duplicated BUSCOs (D)         
+        4       Fragmented BUSCOs (F)                      
+        1       Missing BUSCOs (M)                         
+        425     Total BUSCO groups searched                
+
+> hifiasmtrio assembly 
+>> ERR10930361.fastq - maternal \
+>> ERR10930362.fastq - paternal \
+>> ERR10930363.fastq -child \
   **the table showing the summary is on the README**
 ```
 #!/bin/bash
