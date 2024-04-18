@@ -34,8 +34,6 @@
 #### Genome assembly evaluation
 - [QUAST](https://github.com/ablab/quast) 
 - [BUSCO](https://github.com/metashot/busco) 
-- [BUSCO docker](https://gitlab.com/ezlab/busco) 
-- [BUSCO Read](https://busco.ezlab.org/) 
 - [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach **New approach**
 - [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach **New approach**
 - [blobtoolkit](https://github.com/blobtoolkit/blobtoolkit)
@@ -43,7 +41,7 @@
 
 #### Genome Analysis and Project Summary
 - The project image summary for the June presentation is loated at the following links given below:
-   <img src="https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectupdate.png" alt="image" width="400" height="auto">
+   <img src="https://github.com/sablokgaurav/genomeassembly_standards/blob/main/haplotype_layout.png" alt="image" width="400" height="auto">
 - Project documentation: [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) 
 - Project parameters: [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) 
 - Genome assembly summary: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) 
