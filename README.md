@@ -3,7 +3,8 @@
 
 #### Bolero Project Report:
 - January - March, 2024
-- Project Members: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc, Gaurav Sablok
+- Project Manager and Organizers: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc
+- Project Bioinformatician: Gaurav Sablok
 - Organizations: Universitat Potsdam, CIRAD (Bioinformatics)
 - BOLERO Bioinformatics
 - Project Member Hire and Official Project Meet: 
@@ -55,17 +56,21 @@
 <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/read_count.png" alt="image" width="500" height="auto" align = "center">
 <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
 
-**Haplotype assembly without the trio method: The last l3 means that for the same sample, the -l3 extensive purging was involved.**
+**Haplotype based assembly**
+- The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
+
+| haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
+|---------|----------------|---------------|--------|------|-----|-----|-----|------------|
+| hap 1 | 823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
+| hap 2 | 116 |    31333120 | 502852466 |  35.28 |  23599708 |  18852907 | 10 |  16 |  0.00
+
+**Haplotype assembly without the trio method**: 
+- The last l3 means that for the same sample, the -l3 extensive purging was involved.
 
 | contigs | ERR10930361 | ERR10930362 | ERR10930363 | ERR10930364 | ERR10930364_l3 |
 |-----------------|-----------------|-----------------|-----------------|--------------------|-------------------|
 | | 1248 | 2593 | 2611 | 1640 | 312 |
 -----------------------------------------------------------------------------------------------------------------
-**Haplotype based assembly**
-**Haplotype based assembly**
-   **assembly name: Number of scaffolds**
-- maternalpaternal.asm.dip.hap1.p_ctg.fa:823
-- maternalpaternal.asm.dip.hap2.p_ctg.fa:116
 
 #### does this work on the diplod Arabidopsis and for the comparison detailed analysis below: 
 for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well.
