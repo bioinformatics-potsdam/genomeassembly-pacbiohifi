@@ -64,6 +64,13 @@
 | hap 1 | 823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
 | hap 2 | 116 |    31333120 | 502852466 |  35.28 |  23599708 |  18852907 | 10 |  16 |  0.00
 
+- busco evaluation of both the haplotypes: completeness based on BUSCO for the trio binning method ( Total BUSCO searched 425)
+
+| Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M) | Completion score |
+| -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |-------------|
+|  hap1 | 422  | 415| 7 | 1 | 2 | 99.2%
+| hap2 | 420 | 407 | 13 | 4 | 1 | 98.9%
+
 **Haplotype assembly without the trio method**: 
 - The last l3 means that for the same sample, the -l3 extensive purging was involved.
 
