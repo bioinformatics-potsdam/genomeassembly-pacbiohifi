@@ -1,5 +1,5 @@
-## This file contains the project parameter that were used to standardize the assembly. Below you will find the detail information for the running of the assembly. The ones with the --paration=all are for the Universitat Potsdam server and the ones without the same are for the MESO cluster. 
-### List of modules that are of use on the Universitat Potsdam server
+### This file contains the project parameter that were used to standardize the assembly. Below you will find the detail information for the running of the assembly. The ones with the --paration=all are for the Universitat Potsdam server and the ones without the same are for the MESO cluster. 
+#### List of modules that are of use on the Universitat Potsdam server
 ```
 bio/HTSlib/1.11-GCC-10.2.0
 bio/GenomeTools/1.6.1-GCC-10.2.0
