@@ -169,7 +169,7 @@ verkko -d ERR10930364ASM --hifi /work/sablok/grapevineassemblies/fastq/ERR109303
 #SBATCH --chdir=/work/sablok/grapevineassemblies/busco_evaluation/assembly_eval
 #SBATCH --mail-type=ALL
 #SBATCH --output=slurm-%j.out
-module load bio/BUSCO/5.1.2-foss-2020b
+module load bio/BUSCO/5.1.2-foss-2020b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
 #busco -i ERR10930361ASM.verkko.fasta -l viridiplantae_odb10 -c 32 -o ERR10930361ASM.busco -m geno
 busco -i ERR10930361ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930361ASM.busco -m geno
 busco -i ERR10930362ASM.fasta -l viridiplantae_odb10 -c 32 -o ERR10930362ASM.busco -m geno
@@ -204,20 +204,8 @@ cat full_table.tsv | awk '/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ 
 ```
 cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
 cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{ print $3 }' | sort | uniq -c | wc -l
-``` C:98.9%[S:95.8%,D:3.1%],F:0.9%,M:0.2%,n:425        
-        420     Complete BUSCOs (C)                        
-        407     Complete and single-copy BUSCOs (S)        
-        13      Complete and duplicated BUSCOs (D)         
-        4       Fragmented BUSCOs (F)                      
-        1       Missing BUSCOs (M)                         
-        425     Total BUSCO groups searched                
-
-> hifiasmtrio assembly 
->> ERR10930361.fastq - maternal \
->> ERR10930362.fastq - paternal \
->> ERR10930363.fastq -child \
-  **the table showing the summary is on the README**
-```
+``
+> hifiasm trio binning assembly
 #!/bin/bash
 #SBATCH --partition=all
 #SBATCH --nodes=1
