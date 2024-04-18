@@ -1,8 +1,5 @@
 #### summary stats of the genome assembly trials done and evaluated for the BOLERO project. verkko assembly evaluation. both the indiviual reports and the  summary table is present below for both the evaluation. 
-### accession for the indiviual: ERR10930361ASM.busco - Completion score:99.3%     
-### accession for the indiviual: ERR10930362ASM.busco Completion score:99.1% 
-### accession for the indiviual: ERR10930363ASM.busco Completion score:99.5% 
-### accession for the indiviual: ERR10930364ASM.busco Completion score:99.6% 
+
 #### completeness based on compleasm ( Total BUSCO searched 425) 
 | ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
 | -------------- | --------------- | -------------- | --------------- |
@@ -14,12 +11,12 @@
 |            425    |            425    |          425      |        425        |
 
 #### completeness based on BUSCO ( Total BUSCO searched 425) 
-| Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M)
-| -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |
-|  ERR10930361ASM | 422  | 63 | 359 | 1 | 2  
-| ERR10930362ASM | 421 | 31 | 390 | 3 | 1 
-| ERR10930361ASM | 423 | 62 | 361 | 1 | 1 
-| ERR10930361ASM | 423 | 56 | 367 | 1 | 1  
+| Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M) | Completion score |
+| -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |-------------|
+|  ERR10930361ASM | 422  |  359 | 63 | 1 | 2  | 99.3%
+| ERR10930362ASM | 421 | 390  | 31 | 3 | 1 | 99.1 %
+| ERR10930361ASM | 423 | 361 | 62 | 1 | 1 | 99.5 %
+| ERR10930361ASM | 423 | 367  | 56 | 1 | 1 | 99.6% 
 
 #### reference genome protein comparison 
 | ERR10930361ASM | ERR10930362ASM | ERR10930361ASM | ERR10930361ASM |
