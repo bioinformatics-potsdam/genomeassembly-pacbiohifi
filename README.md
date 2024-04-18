@@ -69,6 +69,11 @@
 - maternalpaternal.asm.dip.hap1.p_ctg.fa:823
 - maternalpaternal.asm.dip.hap2.p_ctg.fa:116
 - The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
+- summary present below:
+| contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
+|---------|----------------|---------------|--------|------|-----|-----|-----|
+| 823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
+
 
 #### does this work on the diplod Arabidopsis and for the comparison detailed analysis below: 
 for the comparison arabidopsis data coming from the following accessions were also assembled to see that everything works well.
