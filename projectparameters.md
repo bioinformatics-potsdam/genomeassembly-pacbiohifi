@@ -223,3 +223,21 @@ yak count -k 31 -t 32 -o parental.yak /work/sablok/grapevineassemblies/fastq/mat
 yak count -k 31 -t 32 -o maternal.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930362.fastq
 hifiasm -o maternalpaternal.asm -t 32 -1 parental.yak -2 maternal.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930363.fastq 2> maternalpaternal.log
 ```
+> awk conversion
+```
+awk '/^S/{print ">"$2;print $3}' graphfile > outfile.fa
+```
+
+> busco evaluation on the hifiasm trio binning assembly
+```
+busco -i maternalpaternal.asm.dip.hap1.p_ctg.fa -l viridiplantae_odb10 -c 32 -o maternalpaternal.asm.dip.hap1.p_ctg.fa.busco -m geno
+busco -i maternalpaternal.asm.dip.hap2.p_ctg.fa -l viridiplantae_odb10 -c 32 -o maternalpaternal.asm.dip.hap2.p_ctg.fa.busco -m geno
+``
+> quast run scores
+```
+conda create -n quast && conda install -n quast -c condaforge quast
+conda clean -t
+conda activate quast
+quast.py -i hap1.fa 
+quast.py -i hap2.fa
+```
