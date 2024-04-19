@@ -232,8 +232,9 @@ awk '/^S/{print ">"$2;print $3}' graphfile > outfile.fa
 ```
 busco -i maternalpaternal.asm.dip.hap1.p_ctg.fa -l viridiplantae_odb10 -c 32 -o maternalpaternal.asm.dip.hap1.p_ctg.fa.busco -m geno
 busco -i maternalpaternal.asm.dip.hap2.p_ctg.fa -l viridiplantae_odb10 -c 32 -o maternalpaternal.asm.dip.hap2.p_ctg.fa.busco -m geno
-``
+```
 > quast run scores
+
 ```
 conda create -n quast && conda install -n quast -c condaforge quast
 conda clean -t
