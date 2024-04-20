@@ -42,7 +42,7 @@
 
 #### Genome Analysis and Project Summary
 - The project image summary for the June presentation is loated at the following links given below:
-   <img src="https://github.com/sablokgaurav/genomeassembly_standards/blob/main/haplotype_layout.png" alt="image" width="400" height="auto">
+   <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/publication_ready_figure.png" alt="image" width="400" height="auto">
 - Project documentation: [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) 
 - Project parameters: [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) 
 - Genome assembly summary: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) 
