@@ -260,3 +260,21 @@ source activate ragtag
 ragtag.py correct /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap1.p_ctg.fa
 ragtag.py correct /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap2.p_ctg.fa
 ```
+> ragtag runs on the triobinning assembly for the scaffolding phase 
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=256G
+#SBATCH --time=2-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/assemblyhifiasm/triobinning_ragtag
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+
+module load lang/Anaconda3/2021.05
+source activate ragtag
+ragtag.py scaffold /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap1.p_ctg.fa
+ragtag.py scaffold /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap2.p_ctg.fa
+```
