@@ -63,3 +63,9 @@ conda create -n busco && conda install -n busco -c bioconda busco
 conda clean -t 
 conda activate busco
 ```
+
+#### alternatively the conda channels can be added directly 
+```
+conda config --add channels bioconda
+conda config --add channels conda-forge
+```
