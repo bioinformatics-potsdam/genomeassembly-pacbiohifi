@@ -98,13 +98,19 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.f
 |  maternalpaternal.asm.dip.hap2.p_ctg.fa.ragtag.correct.scaffold |302   |  465201572      | 1054    |37650894        |28100  | 28 |
 | maternalpaternal.asm.dip.hap1.p_ctg.ragtag.correct.scaffold | 293 |    473623733 |      1619 |    61059882 |       27100 |   271 |
 
-##### quast results after the scaffolding with the ragtag. The number of the scaffolds have increased and this might be due to the fact that the genome is polyploid so the scaffold have been placed accordingly. The assembled size is near to the grapevine genome. 
+#### quast results after the scaffolding with the ragtag. The number of the scaffolds have increased and this might be due to the fact that the genome is polyploid so the scaffold have been placed accordingly. The assembled size is near to the grapevine genome. 
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | maternalpaternal.asm.dip.hap1.p_ctg.ragtag.correct.scaffold | 1626 | 37075411 | 534706754 | 35.47 |  24081286 | 20838642 |  10 |  16 |   5.07 |
 | maternalpaternal.asm.dip.hap2.p_ctg.fa.ragtag.correct.scaffold | 1050 | 35080446 | 502871947 | 35.28 | 23258691 | 21132941 | 10 | 15 | 5.59
 
+#### busco report for the ragtag corrected scaffolds. 
+
+| Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M) | Completion score |
+| -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |-------------|
+|  maternalpaternal.asm.dip.hap1.p_ctg.ragtag.correct.scaffold.fasta | 422  | 415| 7 | 1 | 2 | 99.2%
+| maternalpaternal.asm.dip.hap2.p_ctg.fa.ragtag.correct.scaffold.fasta | 421 | 408 | 13 | 3 | 1 | 99.1%
 
 
 Academic Staff Member \
