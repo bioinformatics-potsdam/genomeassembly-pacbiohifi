@@ -92,7 +92,13 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/058/ERR10084058/ERR10084058.f
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR100/057/ERR10084057/ERR10084057.fastq.gz
 ```
 
-Gaurav Sablok \
+#### ragtag assembly stats on the tribinning asm methods.
+| haplotype name |placed_sequences   |     placed_bp  |     unplaced_sequences |     unplaced_bp |     gap_bp |  gap_sequences |
+|----------------| ---------------------|----------------|-----------------------|------------------|----------------|--------------|
+|  maternalpaternal.asm.dip.hap2.p_ctg.fa.ragtag.correct.scaffold |302   |  465201572      | 1054    |37650894        |28100  | 28 |
+| maternalpaternal.asm.dip.hap1.p_ctg.ragtag.correct.scaffold | 293 |    473623733 |      1619 |    61059882 |       27100 |   271 |
+
+
 Academic Staff Member \
 Bioinformatics \
 Institute for Biochemistry and Biology \
