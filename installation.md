@@ -54,3 +54,12 @@ python3 compleasm.py run -a ERR10930361ASM.fasta -o ERR10930361ASM -l viridiplan
 Section default-resources and set-resources.
 - And snakelike.sh (for singularity and snakemake if needed)
 ```
+
+#### busco can be installed in the following ways:
+```
+docker pull ezlabgva/busco:v5.6.1_cv1
+docker run -u $(id -u) -v $(pwd):/busco_wd ezlabgva/busco:v5.6.1_cv1
+conda create -n busco && conda install -n busco -c bioconda busco 
+conda clean -t 
+conda activate busco
+```
