@@ -278,3 +278,12 @@ source activate ragtag
 ragtag.py scaffold /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap1.p_ctg.fa
 ragtag.py scaffold /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap2.p_ctg.fa
 ```
+> polishing and the phasing of the haplotig assemblies including the detection of the structural variants
+```
+conda config --add-channels bioconda 
+conda config --add-channels conda-forge
+conda clean -t 
+conda create -n longshot && conda install -n longshot longshot 
+conda clean -t 
+
+```

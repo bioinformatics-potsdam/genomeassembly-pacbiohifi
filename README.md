@@ -108,6 +108,8 @@
 | ragtag1 | 422  | 415| 7 | 1 | 2 | 99.2%
 | ragtag2| 421 | 408 | 13 | 3 | 1 | 99.1%
 
+#### launched the polishing phase of the scaffolded and also the ragtag assembly followed by the quast and the busco score of the same. That also included the detection of the structural variants. 
+
 
 Academic Staff Member \
 Bioinformatics \
