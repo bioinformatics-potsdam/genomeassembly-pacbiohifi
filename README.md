@@ -13,8 +13,7 @@
    > [A computing cluster account with 256GB or more and multi node cluster computation at MESO cluster](https://meso-lr.umontpellier.fr/documentation-utilisateurs/)
    
 ### Summary report
-<div align = "justify"><p2>The project BOLERO started with the appointment of the postdoc Dr. Gaurav Sablok on 15th January, 2024 at the Bioinformatics Department, University of Potsdam. Upon arrival, Dr. Sablok had a Zoom discussion with Dr. Manuel Ruiz and Dr. Gaetan Droc from CIRAD, who will strongly collaborate in the context of pangenome assembly. Since data are already in sequencing phase (Nestle), Dr. Sablok started to generate the pipelines necessary for the pangenomic analysis; in addition, since metagenomics data play a central role in BOLERO, particularly in the context of metabolic model development, Dr. Sablok has also been involved in setting up the computational pipelines for genomic and metagenomics analysis. </div>. <div align = "justify"> The first code sraexplorer to explore the sra and this was needed to allow for the efficient data mining and for the comparative analysis. There are two approaches to address the pangenome: a whole genome based graph pangenome and a gene based pangenome. Dr. Sablok has finalized the establishment of the pipelines for gene based pangenome construction.<p2></p2></div>
-   
+
 <p3><div align = "justify"> For the assembly of the pangenome, we have been standardizing the approaches for the PacBioHifi  and the Oxford Nanopore data, allowing the assembly of the genomes, genome polishing and the comparative assessment of the genomes. To supplement the graph based pangenome Dr. Sablok also coded a new python package called as , which analyses all types of the graph alignments and the connections from the graph genome. Dr. Sablok started implementing the genome analysis and check the assurance of the developmental computational pipeline. </p3></div><br>Dr. Sablok has evaluated three state of the art methods for the PacBioHifi assembly such as Verkko, HifiASM, genomeASM4pg and the results are available from the respective links. Additional analysis libraries and packages that have been developed by Dr. Sablok for the analysis of the pacbiohifi reads for the genome assembly are given below and the code listing are given below:</br> 
    
 - pacbio_hifi assembly: https://github.com/sablokgaurav/pacbiohifi-universitat-potsdam 
@@ -61,14 +60,14 @@
 - ERR10930363.fastq -child
 - The hifiasm generates two files when you do the trio binning based on the maternal and the paternal and the filenames outputted are maternalpaternal.asm.dip.hap1.p_ctg.fa and maternalpaternal.asm.dip.hap2.p_ctg.fa and hence they are long so i put the hap1 for the first one and the hap2 for the second one. 
 - The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
-- All the configuration, run ime, wallclock time, nodes, cpu, memory are listed here along with the runtime for each of the analysis [project parameters](https://github.com/codeearn/genomeassembly-standards/blob/main/projectparameters.md)
+- All the configuration, run time, wallclock time, nodes, cpu, memory are listed here along with the runtime for each of the analysis [project parameters](https://github.com/codeearn/genomeassembly-standards/blob/main/projectparameters.md)
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | hap 1 | 823     |  37880845   | 534683615  | 35.47  | 15838561 | 9224513 | 12  | 23  | 0.00
 | hap 2 | 116 |    31333120 | 502852466 |  35.28 |  23599708 |  18852907 | 10 |  16 |  0.00
 
-- busco evaluation of both the haplotypes: completeness based on BUSCO for the trio binning method ( Total BUSCO searched 425)
+- BUSCO evaluation of both the haplotypes: completeness based on BUSCO for the trio binning method ( Total BUSCO searched 425)
 
 | Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M) | Completion score |
 | -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |-------------|
@@ -87,21 +86,22 @@
   -  maternalpaternal.asm.dip.hap2.p_ctg.fa.ragtag.correct.scaffold: ragtag1
   -  maternalpaternal.asm.dip.hap1.p_ctg.ragtag.correct.scaffold: ragtag2
 
-#### ragtag assembly stats on the tribinning asm methods.
+#### Ragtag assembly stats on the tribinning asm methods.
 
 | haplotype name |placed_sequences   |     placed_bp  |     unplaced_sequences |     unplaced_bp |     gap_bp |  gap_sequences |
 |----------------| ---------------------|----------------|-----------------------|------------------|----------------|--------------|
 | ragtag1 | 293 |    473623733 |      1619 |    61059882 |       27100 |   271 |
 |  ragtag2 | 302   |  465201572      | 1054    |37650894        |28100  | 28 |
 
-#### quast results after the scaffolding with the ragtag. The number of the scaffolds have increased and this might be due to the fact that the genome is polyploid so the scaffold have been placed accordingly. The assembled size is near to the grapevine genome. 
+#### Quast results after the scaffolding with the ragtag. 
+  - The number of the scaffolds have increased and this might be due to the fact that the genome is polyploid so the scaffold have been placed accordingly. The assembled size is near to the grapevine genome. 
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | ragtag1 | 1626 | 37075411 | 534706754 | 35.47 |  24081286 | 20838642 |  10 |  16 |   5.07 |
 | ragtag2| 1050 | 35080446 | 502871947 | 35.28 | 23258691 | 21132941 | 10 | 15 | 5.59
 
-#### busco report for the ragtag corrected scaffolds. 
+#### BUSCO report for the ragtag corrected scaffolds. 
 
 | Species | Complete BUSCO | Complete and single-copy BUSCO |  Complete and duplicated BUSCOs (D)  |  Fragmented BUSCOs (F) |  Missing BUSCOs (M) | Completion score |
 | -------------- | --------------- | -------------- | --------------- |  --------------- | --------------- |-------------|
@@ -109,16 +109,16 @@
 | ragtag2| 421 | 408 | 13 | 3 | 1 | 99.1%
 
 <<<<<<< HEAD
-#### verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: 
+#### Verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: 
 
- - assembly stats of the verkko assemblies 
+ - assembly stats of the verkko assemblies using the trio binning.
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | verkko hap 1 | 2259 | 33896910 | 508997582 | 35.56 |  10831024 | 5617093 |  16 |  31 |   5.07 |
 | verkko hap 2 | 995 | 26795713 | 477196271 | 35.13 |  13168430 | 7656591 |  13 |  23 |   5.07 |
 
-- busco results from the verkko assemblies 
+- busco results from the verkko assemblies using the trio binning.
 
 | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
