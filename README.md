@@ -49,9 +49,8 @@
 - Reference evaluation: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) 
 - Installation and configuration: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) 
 - Quast reports: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md) 
-- Hic optimization: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md)
-
-#### Files for the comparison of the genome assembly from the paper are: 
+- Hic optimization: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md) 
+- Polishing and Variant estimation [polishing and variant estimation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hifiasm_verkko_polishing.md)
 
 <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/read_count.png" alt="image" width="500" height="auto" align = "center">
 <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
