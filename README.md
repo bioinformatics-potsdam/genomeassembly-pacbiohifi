@@ -23,6 +23,7 @@
 - pangenome_single_copy https://github.com/sablokgaurav/pangenome-single-copy-gene 
 - assembly_pangenome https://github.com/sablokgaurav/pangraphs-pacbio-nanopore-genome-assembly 
 - graphanalyzer https://github.com/sablokgaurav/graphanalyzer
+- pacbiohifianalyzer https://github.com/sablokgaurav/pacbiohifi-analyzer
 
 #### Genome assembly packages used for the assembly
 - [hifiasm](https://github.com/chhylp123/hifiasm) 
