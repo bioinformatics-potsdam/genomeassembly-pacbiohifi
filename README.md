@@ -89,6 +89,7 @@
   -  maternalpaternal.asm.dip.hap1.p_ctg.ragtag.correct.scaffold: ragtag2
 
 #### ragtag assembly stats on the tribinning asm methods.
+
 | haplotype name |placed_sequences   |     placed_bp  |     unplaced_sequences |     unplaced_bp |     gap_bp |  gap_sequences |
 |----------------| ---------------------|----------------|-----------------------|------------------|----------------|--------------|
 | ragtag1 | 293 |    473623733 |      1619 |    61059882 |       27100 |   271 |
@@ -111,10 +112,19 @@
 <<<<<<< HEAD
 #### verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: 
 
+ - assembly stats of the verkko assemblies 
+
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | verkko hap 1 | 2259 | 33896910 | 508997582 | 35.56 |  10831024 | 5617093 |  16 |  31 |   5.07 |
 | verkko hap 2 | 995 | 26795713 | 477196271 | 35.13 |  13168430 | 7656591 |  13 |  23 |   5.07 |
+
+- busco results from the verkko assemblies 
+
+| assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
+| --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
+| hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
+| hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
 
 
 =======
