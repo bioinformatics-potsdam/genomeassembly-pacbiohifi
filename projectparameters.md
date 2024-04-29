@@ -216,14 +216,13 @@ cat full_table.tsv | awk !'/Duplicated/ { print $1"\t"$2"\t"$3"\t"$4 }' | awk '{
 #SBATCH --chdir=/work/sablok/grapevineassemblies/assemblyhifiasm/triobinningasm
 #SBATCH --mail-type=ALL
 #SBATCH --output=slurm-%j.out
-
 export PATH=/work/sablok/grapevineassemblies/yak:$PATH
 export PATH=/work/sablok/grapevineassemblies/assemblyhifiasm/hifiasm:$PATH
 yak count -k 31 -t 32 -o parental.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930361.fastq
 yak count -k 31 -t 32 -o maternal.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930362.fastq
 hifiasm -o maternalpaternal.asm -t 32 -1 parental.yak -2 maternal.yak /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930363.fastq 2> maternalpaternal.log
 ```
-> awk conversion
+> awk conversion for the gfa files to fasta files. 
 ```
 awk '/^S/{print ">"$2;print $3}' graphfile > outfile.fa
 ```
@@ -254,7 +253,6 @@ quast.py -i hap2.fa
 #SBATCH --chdir=/work/sablok/grapevineassemblies/assemblyhifiasm/triobinning_ragtag
 #SBATCH --mail-type=ALL
 #SBATCH --output=slurm-%j.out
-
 module load lang/Anaconda3/2021.05
 source activate ragtag
 ragtag.py correct /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap1.p_ctg.fa
@@ -272,12 +270,34 @@ ragtag.py correct /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifer
 #SBATCH --chdir=/work/sablok/grapevineassemblies/assemblyhifiasm/triobinning_ragtag
 #SBATCH --mail-type=ALL
 #SBATCH --output=slurm-%j.out
-
 module load lang/Anaconda3/2021.05
 source activate ragtag
 ragtag.py scaffold /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap1.p_ctg.fa
 ragtag.py scaffold /work/sablok/grapevineassemblies/vitis_refgenome/Vitis_vinifera.PN40024.v4.dna.toplevel.fa maternalpaternal.asm.dip.hap2.p_ctg.fa
 ```
+> verkko trio binning assembly 
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/assembly/verkkomaternalparental
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+module load lang/Anaconda3/2021.05
+source activate verkko
+source activate merqury
+###### making hapmers #########
+meryl count compress k=50 /work/sablok/grapevineassemblies/fastq/ERR10930361.fastq output ERR10930361.meryl
+meryl count compress k=50 /work/sablok/grapevineassemblies/fastq/ERR10930362.fastq  output ERR10930362.meryl
+meryl count compress k=50 /work/sablok/grapevineassemblies/fastq/ERR10930361.fastq output ERR10930363.meryl
+###### running the trio binning assembly #########
+verkko -d ERR61ERR62ERR63 --hifi /work/sablok/grapevineassemblies/fastq/maternalpaternalchild/ERR10930363.fastq --hap-kmers parentaladd maternaladd trio
+```
+
 > polishing and the phasing of the haplotig assemblies including the detection of the structural variants
 ```
 conda config --add-channels bioconda 
@@ -285,5 +305,4 @@ conda config --add-channels conda-forge
 conda clean -t 
 conda create -n longshot && conda install -n longshot longshot 
 conda clean -t 
-
 ```
