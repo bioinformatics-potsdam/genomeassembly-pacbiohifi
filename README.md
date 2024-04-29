@@ -108,9 +108,13 @@
 | ragtag1 | 422  | 415| 7 | 1 | 2 | 99.2%
 | ragtag2| 421 | 408 | 13 | 3 | 1 | 99.1%
 
+<<<<<<< HEAD
 #### verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: 
 
 
+=======
+- A note regarding the use of the purge_dups for the PacBiohifi, i read this a more https://github.com/dfguan/purge_dups/issues/113 and it seems that it doesnt support the hifi and also there are several lacks with in the purge_dups, so i think that it would be good to stick with the verkko and hifiasm based purging rather than the purge_dups. On the top of that, i included the GCI https://github.com/yeeus/GCI which actually supports the PacBiohifi and I have worked on this earlier. 
+>>>>>>> 8346ed942d9bbfc9465c1d4fc626ed32abc36ac9
 
 
 Academic Staff Member \
