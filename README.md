@@ -111,6 +111,11 @@
 <<<<<<< HEAD
 #### verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: 
 
+| haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
+|---------|----------------|---------------|--------|------|-----|-----|-----|------------|
+| verkko hap 1 | 2259 | 33896910 | 508997582 | 35.56 |  10831024 | 5617093 |  16 |  31 |   5.07 |
+| verkko hap 2 | 995 | 26795713 | 477196271 | 35.13 |  13168430 | 7656591 |  13 |  23 |   5.07 |
+
 
 =======
 - A note regarding the use of the purge_dups for the PacBiohifi, i read this a more https://github.com/dfguan/purge_dups/issues/113 and it seems that it doesnt support the hifi and also there are several lacks with in the purge_dups, so i think that it would be good to stick with the verkko and hifiasm based purging rather than the purge_dups. On the top of that, i included the GCI https://github.com/yeeus/GCI which actually supports the PacBiohifi and I have worked on this earlier. 
