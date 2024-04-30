@@ -63,9 +63,62 @@ conda create -n busco && conda install -n busco -c bioconda busco
 conda clean -t 
 conda activate busco
 ```
-
 #### alternatively the conda channels can be added directly 
 ```
 conda config --add channels bioconda
 conda config --add channels conda-forge
 ```
+##### installation for the polishing and the variant estimation. the complete YAML is given below: 
+```
+name: longshot
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - binutils_impl_linux-64=2.40=ha885e6a_0
+  - bzip2=1.0.8=hd590300_5
+  - c-ares=1.28.1=hd590300_0
+  - ca-certificates=2024.2.2=hbcca054_0
+  - cmake=3.29.2=hcfe8598_0
+  - gcc_impl_linux-64=13.2.0=h1d3d475_6
+  - kernel-headers_linux-64=2.6.32=he073ed8_17
+  - keyutils=1.6.1=h166bdaf_0
+  - krb5=1.21.2=h659d440_0
+  - ld_impl_linux-64=2.40=h55db66e_0
+  - libcurl=8.7.1=hca28451_0
+  - libedit=3.1.20191231=he28a2e2_2
+  - libev=4.33=hd590300_2
+  - libexpat=2.6.2=h59595ed_0
+  - libgcc-devel_linux-64=13.2.0=h95c4c6d_106
+  - libgcc-ng=13.2.0=hc881cc4_6
+  - libgomp=13.2.0=hc881cc4_6
+  - libnghttp2=1.58.0=h47da74e_1
+  - libsanitizer=13.2.0=h95c4c6d_6
+  - libssh2=1.11.0=h0841786_0
+  - libstdcxx-ng=13.2.0=h95c4c6d_6
+  - libuv=1.48.0=hd590300_0
+  - libzlib=1.2.13=hd590300_5
+  - longshot=1.0.0=hd4f2111_1
+  - miniprot=0.13=he4a0461_0
+  - ncurses=6.4.20240210=h59595ed_0
+  - nextpolish2=0.2.0=hdcf5f25_0
+  - openssl=3.2.1=hd590300_1
+  - rhash=1.4.4=hd590300_0
+  - rust=1.77.2=h70c747d_0
+  - rust-std-x86_64-unknown-linux-gnu=1.77.2=h2c6d0dc_0
+  - sysroot_linux-64=2.12=he073ed8_17
+  - xz=5.2.6=h166bdaf_0
+  - yak=0.1=he4a0461_4
+  - zlib=1.2.13=hd590300_5
+  - zstd=1.5.5=hfc55251_0
+prefix: /home/sablok/.conda/envs/longshot
+```
+- to install use the following 
+```
+conda env create -f longshot 
+```
+
+
