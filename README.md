@@ -125,6 +125,19 @@
 | hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
 | hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
 
+#### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
+ - QUAST reports 
+
+ - BUSCO reports 
+
+
+
+#### Genome assembly stats for the verkko after polishing the genome with the ERR10930363.fastq reads 
+  - QUAST reports 
+
+  -BUSCO reports
+
+
 #### Footnotes 
 - A note regarding the use of the purge_dups for the PacBiohifi, i read this a more https://github.com/dfguan/purge_dups/issues/113 and it seems that it doesnt support the hifi and also there are several lacks with in the purge_dups, so i think that it would be good to stick with the verkko and hifiasm based purging rather than the purge_dups. On the top of that, i included the GCI https://github.com/yeeus/GCI which actually supports the PacBiohifi and I have worked on this earlier. 
 
