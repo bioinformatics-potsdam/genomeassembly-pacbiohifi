@@ -306,3 +306,29 @@ conda clean -t
 conda create -n longshot && conda install -n longshot longshot 
 conda clean -t 
 ```
+> polishing of the hifi assemblies 
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/polishing
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+
+module load lang/Anaconda3/2021.05
+source activate longshot 
+
+minimap2 -ax map-hifi -t 20 /work/sablok/grapevineassemblies/polishing/maternalpaternal.asm.dip.hap1.p_ctg.fa  /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq -o ERR10930363.hifi.hap1.bam
+minimap2 -ax map-hifi -t 20 /work/sablok/grapevineassemblies/polishing/maternalpaternal.asm.dip.hap2.p_ctg.fa  /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq -o ERR10930363.hifi.hap2.bam
+samtools sort -o ERR10930363.hifi.hap1.sorted.bam ERR10930363.hifi.hap1.bam
+samtools sort -o ERR10930363.hifi.hap2.sorted.bam ERR10930363.hifi.hap2.bam
+samtools index ERR10930363.hifi.hap1.sorted.bam
+samtools index ERR10930363.hifi.hap2.sorted.bam
+yak count -o k31.yak -k 31 -b 37 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
+nextPolish2 -t 5 ERR10930363.hifi.hap1.sorted.bam k31.yak > ERR10930363.hap1.polished.fasta
+nextPolish2 -t 5 ERR10930363.hifi.hap2.sorted.bam k31.yak > ERR10930363.hap2.polished.fasta
+```
