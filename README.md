@@ -109,16 +109,30 @@
 | ragtag1 | 422  | 415| 7 | 1 | 2 | 99.2%
 | ragtag2| 421 | 408 | 13 | 3 | 1 | 99.1%
 
-#### Verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: 
+#### Verkko assembly has been finished, parameters added to the parameters, including the wallclock time, resources used, time of execution, summary below: kmer used 30
 
- - assembly stats of the verkko assemblies using the trio binning.
+ - assembly stats of the verkko assemblies using the trio binning. kmer used 30
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | verkko hap 1 | 2259 | 33896910 | 508997582 | 35.56 |  10831024 | 5617093 |  16 |  31 |   5.07 |
 | verkko hap 2 | 995 | 26795713 | 477196271 | 35.13 |  13168430 | 7656591 |  13 |  23 |   5.07 |
 
-- BUSCO results from the verkko assemblies using the trio binning.
+ - assembly stats of the verkko assemblies using the trio binning. kmer used 50
+
+| haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
+|---------|----------------|---------------|--------|------|-----|-----|-----|------------|
+| verkko hap 1 |  2511  |  33896910 |   524953580 |  35.53 |  10586138 |  5279585  | 17 |  34 |  193.92 | 
+| verkko hap 2 | 1061 |   26317445 |   485115873 |  35.14 |  13168430 |  7577555 | 13 |  24 |  263.24 |
+
+- BUSCO results from the verkko assemblies using the trio binning. kmer used 30
+
+| assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
+| --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
+| hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
+| hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
+
+- BUSCO results from the verkko assemblies using the trio binning. kmer used 50
 
 | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
