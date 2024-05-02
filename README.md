@@ -4,7 +4,7 @@
 #### Bolero Project Report:
 - January - March, 2024
 - Project Manager and Organizers: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc
-- Project Bioinformatician: Gaurav Sablok
+- Project Bioinformatician: Gaurav 
 - Organizations: Universitat Potsdam, CIRAD (Bioinformatics)
 - BOLERO Bioinformatics
 - Project Member Hire and Official Project Meet: 
@@ -155,7 +155,7 @@
 #### Footnotes 
 - A note regarding the use of the purge_dups for the PacBiohifi, i read this a more https://github.com/dfguan/purge_dups/issues/113 and it seems that it doesnt support the hifi and also there are several lacks with in the purge_dups, so i think that it would be good to stick with the verkko and hifiasm based purging rather than the purge_dups. On the top of that, i included the GCI https://github.com/yeeus/GCI which actually supports the PacBiohifi and I have worked on this earlier. 
 
-
+Gaurav \
 Academic Staff Member \
 Bioinformatics \
 Institute for Biochemistry and Biology \
