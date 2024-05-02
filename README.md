@@ -133,11 +133,15 @@
 | hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
 
 - BUSCO results from the verkko assemblies using the trio binning. kmer used 50
+- By using the high kmer the BUSCO score improved.
 
 | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
-| hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
+| hap1 | 401 | 392 | 9 | 0 | 24 | 94.3% |
 | hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
+
+
+
 
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
  - QUAST reports 
