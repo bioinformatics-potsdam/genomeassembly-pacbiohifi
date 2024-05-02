@@ -16,14 +16,14 @@
 
 <p3><div align = "justify"> For the assembly of the pangenome, we have been standardizing the approaches for the PacBioHifi  and the Oxford Nanopore data, allowing the assembly of the genomes, genome polishing and the comparative assessment of the genomes. To supplement the graph based pangenome Dr. Sablok also coded a new python package called as , which analyses all types of the graph alignments and the connections from the graph genome. Dr. Sablok started implementing the genome analysis and check the assurance of the developmental computational pipeline. </p3></div><br>Dr. Sablok has evaluated three state of the art methods for the PacBioHifi assembly such as Verkko, HifiASM, genomeASM4pg and the results are available from the respective links. Additional analysis libraries and packages that have been developed by Dr. Sablok for the analysis of the pacbiohifi reads for the genome assembly are given below and the code listing are given below:</br> 
    
-- pacbio_hifi assembly: https://github.com/sablokgaurav/pacbiohifi-universitat-potsdam 
-- pacbio_hifi_assembly_genome https://github.com/sablokgaurav/gawk-awk-paf-alignments 
-- sra_explorer https://github.com/sablokgaurav/sra-explorer 
-- pangenome_evolutionary https://github.com/sablokgaurav/pangenome-evolutionary 
-- pangenome_single_copy https://github.com/sablokgaurav/pangenome-single-copy-gene 
-- assembly_pangenome https://github.com/sablokgaurav/pangraphs-pacbio-nanopore-genome-assembly 
-- graphanalyzer https://github.com/sablokgaurav/graphanalyzer
-- pacbiohifianalyzer https://github.com/sablokgaurav/pacbiohifi-analyzer
+- pacbio_hifi assembly: https://github.com/gauravearn/pacbiohifi-universitat-potsdam 
+- pacbio_hifi_assembly_genome https://github.com/gauravearn/gawk-awk-paf-alignments 
+- sra_explorer https://github.com/gauravearn/sra-explorer 
+- pangenome_evolutionary https://github.com/gauravearn/pangenome-evolutionary 
+- pangenome_single_copy https://github.com/gauravearn/pangenome-single-copy-gene 
+- assembly_pangenome https://github.com/gauravearn/pangraphs-pacbio-nanopore-genome-assembly 
+- graphanalyzer https://github.com/gauravearn/graphanalyzer
+- pacbiohifianalyzer https://github.com/gauravearn/pacbiohifi-analyzer
 
 #### Genome assembly packages used for the assembly
 - [hifiasm](https://github.com/chhylp123/hifiasm) 
@@ -43,25 +43,25 @@
 #### Genome Analysis and Project Summary
 - The project image summary for the June presentation is loated at the following links given below:
    <img src="https://github.com/codeearn/genomeassembly-standards/blob/main/publication_ready_figure.png" alt="image" width="400" height="auto">
-- Project documentation: [Project documentation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectsummary.md) 
-- Project parameters: [Project parameters](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/projectparameters.md) 
-- Genome assembly summary: [Summary evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/summarystats.md) 
-- Reference evaluation: [Reference evaluation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/referenceevaluation.md) 
-- Installation and configuration: [Installation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/installation.md) 
-- Quast reports: [quast](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/quastreports.md) 
-- Hic optimization: [hic](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hicdocumentation.md) 
-- Polishing and Variant estimation [polishing and variant estimation](https://github.com/sablokgaurav/genomeassembly_standards/blob/main/hifiasm_verkko_polishing.md)
+- Project documentation: [Project documentation](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/projectsummary.md) 
+- Project parameters: [Project parameters](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/projectparameters.md) 
+- Genome assembly summary: [Summary evaluation](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/summarystats.md) 
+- Reference evaluation: [Reference evaluation](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/referenceevaluation.md) 
+- Installation and configuration: [Installation](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/installation.md) 
+- Quast reports: [quast](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/quastreports.md) 
+- Hic optimization: [hic](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/hicdocumentation.md) 
+- Polishing and Variant estimation [polishing and variant estimation](https://github.com/sablokgaurav/genomeassembly-pacbiohifi-robusta/blob/main/hifiasm_verkko_polishing.md)
 
-<img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/read_count.png" alt="image" width="500" height="auto" align = "center">
-<img src="https://github.com/codeearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
+<img src="https://github.com/gauravearn/genomeassembly-standards/blob/main/reading/read_count.png" alt="image" width="500" height="auto" align = "center">
+<img src="https://github.com/gauravearn/genomeassembly-standards/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
 
 **Haplotype based assembly**
 - ERR10930361.fastq - maternal
 - ERR10930362.fastq - paternal
 - ERR10930363.fastq -child
 - The hifiasm generates two files when you do the trio binning based on the maternal and the paternal and the filenames outputted are maternalpaternal.asm.dip.hap1.p_ctg.fa and maternalpaternal.asm.dip.hap2.p_ctg.fa and hence they are long so i put the hap1 for the first one and the hap2 for the second one. 
-- The hifiasm trio binning results are present at [trio binning](https://github.com/codeearn/genomeassembly-standards/tree/main/hifiasm_tri_binning)
-- All the configuration, run time, wallclock time, nodes, cpu, memory are listed here along with the runtime for each of the analysis [project parameters](https://github.com/codeearn/genomeassembly-standards/blob/main/projectparameters.md)
+- The hifiasm trio binning results are present at [trio binning](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/tree/main/hifiasm_tri_binning)
+- All the configuration, run time, wallclock time, nodes, cpu, memory are listed here along with the runtime for each of the analysis [project parameters](https://github.com/gauravearn/genomeassembly-pacbiohifi-robusta/blob/main/projectparameters.md)
 
 | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
