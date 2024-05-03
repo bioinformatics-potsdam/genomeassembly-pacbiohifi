@@ -140,6 +140,11 @@
 | hap1 | 401 | 392 | 9 | 0 | 24 | 94.3% |
 | hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
 
+- assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes
+  -- bamtools coverage stats for hap1 
+
+  -- bamtools coverage stats for hap2
+
 
 
 
