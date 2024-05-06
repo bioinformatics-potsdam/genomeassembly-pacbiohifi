@@ -160,6 +160,11 @@
  - BUSCO reports 
 
 
+#### genome contiguity analysis using the [GCI](https://github.com/yeeus/GCI)
+
+
+
+
 
 #### Genome assembly stats for the verkko after polishing the genome with the ERR10930363.fastq reads 
   - QUAST reports 
