@@ -332,3 +332,12 @@ yak count -o k31.yak -k 31 -b 37 /work/sablok/grapevineassemblies/fastq/ERR10930
 nextPolish2 -t 20 ERR10930363.hifi.hap1.sorted.bam maternalpaternal.asm.dip.hap1.p_ctg.fa k31.yak > ERR10930363.hap1.polished.fasta
 nextPolish2 -t 20 ERR10930363.hifi.hap2.sorted.bam maternalpaternal.asm.dip.hap1.p_ctg.fa k31.yak > ERR10930363.hap2.polished.fasta
 ```
+
+> mapping reads for the polishing of the genome and depth estimation 
+```
+  for i in *.sorted.bam; do bamstats -in $i > ${i%.*}.json.txt; done 
+```
+> if you use jq for the json parsing then 
+```  
+  for i in *.json.txt; cat $i | jq -c ".general.reads" -c; done
+```

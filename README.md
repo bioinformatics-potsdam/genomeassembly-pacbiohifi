@@ -141,15 +141,19 @@
 | hap2 | 400 | 389 | 11 | 3 | 21 | 94.1% |
 
 
-- assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes. The coverage and the mapping for the polished genome is below: 
+- assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes. 
 
   -- bamstats coverage for hap1 and hap2 
     | Haplotype | Total reads | Mapped reads | Forward strand | Reverse strand | 
     |-----------|------------|-------------|---------------|---------------|
     |  hap1 | 3866068 | 3863435 (99.9319%) | 1936181 (50.0814%)  | 1929887 (49.9186%) |
     |  hap2 | 3656794 | 3653759 (99.917%) | 1831768      (50.0922%) | 1825026  (49.9078%) | 
-
-
+  
+  -- bamstats for the hap1 and hap2 
+    --- code to reproduce this present in the project parameters 
+       hap1: "total":2330837,"unmapped":2633,"mapped":{"0":2328204},"mappings":{"ratio":1.65941,"count":3863435} 
+       hap2: "total":2529319,"unmapped":3035,"mapped":{"0":2526284},"mappings":{"ratio":1.4463,"count":3653759}
+       
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
  - QUAST reports 
 
