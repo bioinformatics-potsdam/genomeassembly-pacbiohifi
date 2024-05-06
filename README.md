@@ -151,8 +151,8 @@
   
   -- bamstats for the hap1 and hap2 
     --- code to reproduce this present in the project parameters 
-       hap1: "total":2330837,"unmapped":2633,"mapped":{"0":2328204},"mappings":{"ratio":1.65941,"count":3863435} 
-       hap2: "total":2529319,"unmapped":3035,"mapped":{"0":2526284},"mappings":{"ratio":1.4463,"count":3653759}
+      - hap1: "total":2330837,"unmapped":2633,"mapped":{"0":2328204},"mappings":{"ratio":1.65941,"count":3863435} 
+      -  hap2: "total":2529319,"unmapped":3035,"mapped":{"0":2526284},"mappings":{"ratio":1.4463,"count":3653759}
        
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
  - QUAST reports 
