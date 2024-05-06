@@ -329,6 +329,6 @@ samtools sort -o ERR10930363.hifi.hap2.sorted.bam ERR10930363.hifi.hap2.bam
 samtools index ERR10930363.hifi.hap1.sorted.bam
 samtools index ERR10930363.hifi.hap2.sorted.bam
 yak count -o k31.yak -k 31 -b 37 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
-nextPolish2 -t 5 ERR10930363.hifi.hap1.sorted.bam k31.yak > ERR10930363.hap1.polished.fasta
-nextPolish2 -t 5 ERR10930363.hifi.hap2.sorted.bam k31.yak > ERR10930363.hap2.polished.fasta
+nextPolish2 -t 20 ERR10930363.hifi.hap1.sorted.bam maternalpaternal.asm.dip.hap1.p_ctg.fa k31.yak > ERR10930363.hap1.polished.fasta
+nextPolish2 -t 20 ERR10930363.hifi.hap2.sorted.bam maternalpaternal.asm.dip.hap1.p_ctg.fa k31.yak > ERR10930363.hap2.polished.fasta
 ```
