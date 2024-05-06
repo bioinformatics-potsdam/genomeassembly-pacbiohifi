@@ -141,8 +141,27 @@
 | hap2 | 400 | 389 | 11 | 3 | 21 | 94.1% |
 
 
-- assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes
+- assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes. The coverage and the mapping for the polished genome is below: 
+
   -- bamtools coverage stats for hap1 
+
+  {
+        "general": {
+                "protocol": "SingleEnd",
+                "reads": {
+                        "total": 2330837,
+                        "unmapped": 2633,
+                        "mapped": {
+                                "0": 2328204
+                        },
+                        "mappings": {
+                                "ratio": 1.65941,
+                                "count": 3863435
+                        }
+                },
+                "pairs": {}
+        }
+}
 
   -- bamtools coverage stats for hap2
 
