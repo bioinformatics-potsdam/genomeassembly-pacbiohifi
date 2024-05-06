@@ -341,3 +341,24 @@ nextPolish2 -t 20 ERR10930363.hifi.hap2.sorted.bam maternalpaternal.asm.dip.hap1
 ```  
   for i in *.json.txt; cat $i | jq -c ".general.reads" -c; done
 ```
+> genome contiguity analysis 
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/genomecontiguityanalysis
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+
+module load lang/Anaconda3/2021.05
+source activate longshot 
+
+minimap2 -ax map-hifi -t 20 /work/sablok/grapevineassemblies/genomecontiguityanalysis/maternalpaternal.asm.dip.hap1.p_ctg.fa  /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq > ERR10930363.hifi.hap1.sam
+minimap2 -ax map-hifi -t 20 /work/sablok/grapevineassemblies/genomecontiguityanalysis/maternalpaternal.asm.dip.hap2.p_ctg.fa  /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq > ERR10930363.hifi.hap2.sam
+paftools.js sam2paf -p ERR10930363.hifi.hap1.sam | sort -k6,6V -k8,8n > ERR10930363.hifi.hap1.paf
+paftools.js sam2paf -p ERR10930363.hifi.hap2.sam | sort -k6,6V -k8,8n > ERR10930363.hifi.hap2.paf
+```

@@ -89,7 +89,7 @@
 
 #### Ragtag assembly stats on the tribinning asm methods.
 
-| haplotype name |placed_sequences   |     placed_bp  |     unplaced_sequences |     unplaced_bp |     gap_bp |  gap_sequences |
+| haplotype name | placed_sequences  |   placed_bp  |   unplaced_sequences |  unplaced_bp |  gap_bp |  gap_sequences |
 |----------------| ---------------------|----------------|-----------------------|------------------|----------------|--------------|
 | ragtag1 | 293 |    473623733 |      1619 |    61059882 |       27100 |   271 |
 | ragtag2 | 302   |  465201572      | 1054    |37650894        |28100  | 28 |
