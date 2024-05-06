@@ -143,43 +143,6 @@
 
 - assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes. The coverage and the mapping for the polished genome is below: 
 
-  -- bamstats coverage stats for hap1 
-  {
-        "general": {
-                "protocol": "SingleEnd",
-                "reads": {
-                        "total": 2330837,
-                        "unmapped": 2633,
-                        "mapped": {
-                                "0": 2328204
-                        },
-                        "mappings": {
-                                "ratio": 1.65941,
-                                "count": 3863435
-                        }
-                },
-                "pairs": {}
-        }
-}
-  -- bamstats coverage stats for hap2
-   {
-        "general": {
-                "protocol": "SingleEnd",
-                "reads": {
-                        "total": 2529319,
-                        "unmapped": 3035,
-                        "mapped": {
-                                "0": 2526284
-                        },
-                        "mappings": {
-                                "ratio": 1.4463,
-                                "count": 3653759
-                        }
-                },
-                "pairs": {}
-        }
-}
-
   -- bamstats coverage for hap1 and hap2 
     | Haplotype | Total reads | Mapped reads | Forward strand | Reverse strand | 
     |-----------|------------|-------------|---------------|---------------|
