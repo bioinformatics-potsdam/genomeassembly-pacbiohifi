@@ -138,7 +138,8 @@
 | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
 | hap1 | 401 | 392 | 9 | 0 | 24 | 94.3% |
-| hap2 | 394 | 384 | 10 | 3 | 28 | 92.8% |
+| hap2 | 400 | 389 | 11 | 3 | 21 | 94.1% |
+
 
 - assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes
   -- bamtools coverage stats for hap1 
