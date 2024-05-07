@@ -362,3 +362,29 @@ minimap2 -ax map-hifi -t 20 /work/sablok/grapevineassemblies/genomecontiguityana
 paftools.js sam2paf -p ERR10930363.hifi.hap1.sam | sort -k6,6V -k8,8n > ERR10930363.hifi.hap1.paf
 paftools.js sam2paf -p ERR10930363.hifi.hap2.sam | sort -k6,6V -k8,8n > ERR10930363.hifi.hap2.paf
 ```
+> verkko assembly polishing 
+```
+#!/bin/bash
+#SBATCH --partition=all
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=256G
+#SBATCH --time=5-00:00
+#SBATCH --chdir=/work/sablok/grapevineassemblies/polishing/ERR61ERR62ERR63_polishing
+#SBATCH --mail-type=ALL
+#SBATCH --output=slurm-%j.out
+
+module load lang/Anaconda3/2021.05
+source activate longshot 
+
+minimap2 -ax map-hifi -t 20 assembly.haplotype1.fasta  /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq -o ERR10930363verkko.hifi.hap1.bam
+minimap2 -ax map-hifi -t 20 assembly.haplotype2.fasta  /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq -o ERR10930363verkko.hifi.hap2.bam
+samtools sort -o ERR10930363verkko.hifi.hap1.sorted.bam ERR10930363verkko.hifi.hap1.bam
+samtools sort -o ERR10930363verkko.hifi.hap2.sorted.bam ERR10930363verkko.hifi.hap2.bam
+samtools index ERR10930363verkko.hifi.hap1.sorted.bam
+samtools index ERR10930363verkko.hifi.hap2.sorted.bam
+yak count -o k31.yak -k 31 -b 37 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
+nextPolish2 -t 30 ERR10930363verkko.hifi.hap1.sorted.bam assembly.haplotype1.fasta k31.yak > assembly.haplotype1.polished.fasta
+nextPolish2 -t 30 ERR10930363verkko.hifi.hap2.sorted.bam assembly.haplotype2.fasta > assembly.haplotype2.polished.fasta
+```
