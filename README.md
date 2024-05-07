@@ -163,7 +163,12 @@
 | hap 2 | 116 |   31333114 |   502764077 |  35.28 |  23599476 |  18852818 | 10 |  16 |  0.00 |
 
 
- - BUSCO reports 
+ - BUSCO reports of hifiasm polished genome
+
+ | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
+| --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
+| hap1 | 422 | 415 | 7 | 1 | 2 | 99.2% |
+| hap2 | 420 | 407 | 13 | 4 | 1 | 98.9% |
 
 
 #### genome contiguity analysis using the [GCI](https://github.com/yeeus/GCI)
