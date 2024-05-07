@@ -157,6 +157,12 @@
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
  - QUAST reports 
 
+ | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
+|---------|----------------|---------------|--------|------|-----|-----|-----|------------|
+| hap 1 |  823  |  37880684 |   534634347 |  35.47 |  15838572 |  9224508  | 12 |  23 |  0.00 | 
+| hap 2 | 116 |   31333114 |   502764077 |  35.28 |  23599476 |  18852818 | 10 |  16 |  0.00 |
+
+
  - BUSCO reports 
 
 
