@@ -386,5 +386,5 @@ samtools index ERR10930363verkko.hifi.hap1.sorted.bam
 samtools index ERR10930363verkko.hifi.hap2.sorted.bam
 yak count -o k31.yak -k 31 -b 37 /work/sablok/grapevineassemblies/fastq/ERR10930363.fastq
 nextPolish2 -t 30 ERR10930363verkko.hifi.hap1.sorted.bam assembly.haplotype1.fasta k31.yak > assembly.haplotype1.polished.fasta
-nextPolish2 -t 30 ERR10930363verkko.hifi.hap2.sorted.bam assembly.haplotype2.fasta > assembly.haplotype2.polished.fasta
+nextPolish2 -t 30 ERR10930363verkko.hifi.hap2.sorted.bam assembly.haplotype2.fasta k31.yak > assembly.haplotype2.polished.fasta
 ```
