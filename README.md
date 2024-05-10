@@ -48,9 +48,6 @@
 - Genome assembly summary: [Summary evaluation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/summarystats.md) 
 - Reference evaluation: [Reference evaluation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/referenceevaluation.md) 
 - Installation and configuration: [Installation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/installation.md) 
-- Quast reports: [quast](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/quastreports.md) 
-- Hic optimization: [hic](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/hicdocumentation.md) 
-- Polishing and Variant estimation [polishing and variant estimation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/hifiasm_verkko_polishing.md)
 
 <img src="https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/reading/read_count.png" alt="image" width="500" height="auto" align = "center">
 <img src="https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/reading/assembly_quality.png" alt="image" width="500" height="auto" align = "center">
