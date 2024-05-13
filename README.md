@@ -158,25 +158,24 @@
 | hap 2 | 995 |   26781654 |   477006706 |  35.13 |  13168428 |  7656584 | 13 |  23 |  256.48 |
 
  - BUSCO reports of hifiasm polished genome
-| assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
+  | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
-| hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
-| hap2 | 394 | 383 | 11 | 3 | 28 | 92.7% |
+| hap1 | 422 | 415 | 7 | 1 | 2 | 99.2% |
+| hap2 | 420 | 407 | 13 | 4 | 1 | 98.9% |
 
 #### Genome assembly stats for the verkko after polishing the genome with the ERR10930363.fastq reads 
   - QUAST reports 
-
  | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | hap 1 |  823  |  37880684 |   534634347 |  35.47 |  15838572 |  9224508  | 12 |  23 |  0.00 | 
 | hap 2 | 116 |   31333114 |   502764077 |  35.28 |  23599476 |  18852818 | 10 |  16 |  0.00 |
 
   -BUSCO reports
-
- | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
+| assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
-| hap1 | 422 | 415 | 7 | 1 | 2 | 99.2% |
-| hap2 | 420 | 407 | 13 | 4 | 1 | 98.9% |
+| hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
+| hap2 | 394 | 383 | 11 | 3 | 28 | 92.7% |
+
 
 #### Footnotes 
 - A note regarding the use of the purge_dups for the PacBiohifi, i read this a more https://github.com/dfguan/purge_dups/issues/113 and it seems that it doesnt support the hifi and also there are several lacks with in the purge_dups, so i think that it would be good to stick with the verkko and hifiasm based purging rather than the purge_dups. On the top of that, i included the GCI https://github.com/yeeus/GCI which actually supports the PacBiohifi and I have worked on this earlier. 
