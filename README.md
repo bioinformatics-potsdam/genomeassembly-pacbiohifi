@@ -146,10 +146,10 @@
     |  hap2 | 3656794 | 3653759 (99.917%) | 1831768      (50.0922%) | 1825026  (49.9078%) | 
   
   -- bamstats for the hap1 and hap2 
-         | haplotype | total | unmapped | mapped | mappings ratio | mappings count |
-         | ----------|-------|----------|--------|----------------|----------------|
-         | hap1 | 2330837 | 2633 | 2328204 | 1.65941 | 3863435 |
-         | hap2 | 2529319 | 3035 | 2526284 | 1.4463 | 3653759 |
+    | haplotype | total | unmapped | mapped | mappings ratio | mappings count |
+    | ----------|-------|----------|--------|----------------|----------------|
+    | hap1 | 2330837 | 2633 | 2328204 | 1.65941 | 3863435 |
+    | hap2 | 2529319 | 3035 | 2526284 | 1.4463 | 3653759 |
 
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
 
