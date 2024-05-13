@@ -137,7 +137,6 @@
 | hap1 | 401 | 392 | 9 | 0 | 24 | 94.3% |
 | hap2 | 400 | 389 | 11 | 3 | 21 | 94.1% |
 
-
 - assembly mapping reads using the pacbiohifi mapping and the coverage for the haplotypes. 
 
   -- bamstats coverage for hap1 and hap2 
@@ -152,23 +151,17 @@
       -  hap2: "total":2529319,"unmapped":3035,"mapped":{"0":2526284},"mappings":{"ratio":1.4463,"count":3653759}
        
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
- - QUAST reports 
-
+ - QUAST reports
  | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | hap 1 |  2259  |  33896900 |   508823952 |  35.56 |  10831023 |  5617076  | 16 |  31 |  195.80 | 
 | hap 2 | 995 |   26781654 |   477006706 |  35.13 |  13168428 |  7656584 | 13 |  23 |  256.48 |
 
-
  - BUSCO reports of hifiasm polished genome
-
- | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
+| assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
-
-
-#### genome contiguity analysis using the [GCI](https://github.com/yeeus/GCI)
-
-
+| hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
+| hap2 | 394 | 383 | 11 | 3 | 28 | 92.7% |
 
 #### Genome assembly stats for the verkko after polishing the genome with the ERR10930363.fastq reads 
   - QUAST reports 
