@@ -147,6 +147,7 @@
   
   -- bamstats for the hap1 and hap2 
     --- code to reproduce this present in the project parameters 
+    
          | haplotype | total | unmapped | mapped | mappings ratio | mappings count |
          | ----------|-------|----------|--------|----------------|----------------|
          | hap1 | 2330837 | 2633 | 2328204 | 1.65941 | 3863435 |
