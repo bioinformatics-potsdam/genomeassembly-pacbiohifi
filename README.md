@@ -146,8 +146,6 @@
     |  hap2 | 3656794 | 3653759 (99.917%) | 1831768      (50.0922%) | 1825026  (49.9078%) | 
   
   -- bamstats for the hap1 and hap2 
-    --- code to reproduce this present in the project parameters 
-    
          | haplotype | total | unmapped | mapped | mappings ratio | mappings count |
          | ----------|-------|----------|--------|----------------|----------------|
          | hap1 | 2330837 | 2633 | 2328204 | 1.65941 | 3863435 |
