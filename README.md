@@ -151,26 +151,32 @@
       -  hap2: "total":2529319,"unmapped":3035,"mapped":{"0":2526284},"mappings":{"ratio":1.4463,"count":3653759}
        
 #### Genome assembly stats for the hifiasm after polishing the genome with the ERR10930363.fastq reads
+
  - QUAST reports
+
  | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | hap 1 |  2259  |  33896900 |   508823952 |  35.56 |  10831023 |  5617076  | 16 |  31 |  195.80 | 
 | hap 2 | 995 |   26781654 |   477006706 |  35.13 |  13168428 |  7656584 | 13 |  23 |  256.48 |
 
  - BUSCO reports of hifiasm polished genome
+
   | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
 | hap1 | 422 | 415 | 7 | 1 | 2 | 99.2% |
 | hap2 | 420 | 407 | 13 | 4 | 1 | 98.9% |
 
 #### Genome assembly stats for the verkko after polishing the genome with the ERR10930363.fastq reads 
+
   - QUAST reports 
+
  | haplotypes | contigs | Largest contig |  Total length | GC (%) |  N50 | N75 | L50 | L75 |
 |---------|----------------|---------------|--------|------|-----|-----|-----|------------|
 | hap 1 |  823  |  37880684 |   534634347 |  35.47 |  15838572 |  9224508  | 12 |  23 |  0.00 | 
 | hap 2 | 116 |   31333114 |   502764077 |  35.28 |  23599476 |  18852818 | 10 |  16 |  0.00 |
 
   -BUSCO reports
+  
 | assembly type | complete busco | complete and single copy busco | complete and duplicated busco | fragmented busco | missing busco | completion score | 
 | --------------- |------------------- | ---------------- | ------------------ | ------------------- |------------------------ | ------------ |
 | hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
