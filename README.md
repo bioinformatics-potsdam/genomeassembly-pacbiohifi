@@ -1,30 +1,7 @@
 # genomeassembly-robusta
+
 <div align = "justify"> complete analysis and report generation for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. </div>
-
-#### Bolero Project Report:
-- January - March, 2024
-- Project Manager and Organizers: Prof.Dr. Zoran Nikoloski, Manuel Ruiz, Gaeten Droc
-- Project Bioinformatician: Gaurav 
-- Organizations: Universitat Potsdam, CIRAD (Bioinformatics)
-- BOLERO Bioinformatics
-- Project Member Hire and Official Project Meet: 
-- Resource Setup
-   > [A computing cluster with the 256GB or more RAM and multi node cluster computation at Universitat Potsdam](https://docs.hpc.uni-potsdam.de/) \
-   > [A computing cluster account with 256GB or more and multi node cluster computation at MESO cluster](https://meso-lr.umontpellier.fr/documentation-utilisateurs/)
    
-### Summary report
-
-<p3><div align = "justify"> For the assembly of the pangenome, we have been standardizing the approaches for the PacBioHifi  and the Oxford Nanopore data, allowing the assembly of the genomes, genome polishing and the comparative assessment of the genomes. To supplement the graph based pangenome Dr. Sablok also coded a new python package called as , which analyses all types of the graph alignments and the connections from the graph genome. Dr. Sablok started implementing the genome analysis and check the assurance of the developmental computational pipeline. </p3></div><br>Dr. Sablok has evaluated three state of the art methods for the PacBioHifi assembly such as Verkko, HifiASM, genomeASM4pg and the results are available from the respective links. Additional analysis libraries and packages that have been developed by Dr. Sablok for the analysis of the pacbiohifi reads for the genome assembly are given below and the code listing are given below:</br> 
-   
-- pacbio_hifi assembly: https://github.com/gauravcodepro/pacbiohifi-universitat-potsdam 
-- pacbio_hifi_assembly_genome https://github.com/gauravcodepro/gawk-awk-paf-alignments 
-- sra_explorer https://github.com/gauravcodepro/sra-explorer 
-- pangenome_evolutionary https://github.com/gauravcodepro/pangenome-evolutionary 
-- pangenome_single_copy https://github.com/gauravcodepro/pangenome-single-copy-gene 
-- assembly_pangenome https://github.com/gauravcodepro/pangraphs-pacbio-nanopore-genome-assembly 
-- graphanalyzer https://github.com/gauravcodepro/graphanalyzer
-- pacbiohifianalyzer https://github.com/gauravcodepro/pacbiohifi-analyzer
-
 #### Genome assembly packages used for the assembly
 - [hifiasm](https://github.com/chhylp123/hifiasm) 
 - [Meryl](https://github.com/marbl/meryl) 
@@ -183,13 +160,4 @@
 | hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
 | hap2 | 394 | 383 | 11 | 3 | 28 | 92.7% |
 
-
-#### Footnotes 
-- A note regarding the use of the purge_dups for the PacBiohifi, i read this a more https://github.com/dfguan/purge_dups/issues/113 and it seems that it doesnt support the hifi and also there are several lacks with in the purge_dups, so i think that it would be good to stick with the verkko and hifiasm based purging rather than the purge_dups. On the top of that, i included the GCI https://github.com/yeeus/GCI which actually supports the PacBiohifi and I have worked on this earlier. 
-
-Gaurav \
-Academic Staff Member \
-Bioinformatics \
-Institute for Biochemistry and Biology \
-University of Potsdam \
-Potsdam,Germany
+Gaurav 
