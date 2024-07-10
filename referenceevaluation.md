@@ -13,10 +13,7 @@ The corresponding files are located with in the repository and the links to the 
 [Vitis Genome file]
 (https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants/release-58/fasta/vitis_vinifera/dna/Vitis_vinifera.PN40024.v4.dna.chromosome.1.fa.gz)
 ```
-### Additional new approaches integrated into the assembly project for the coffee genome. 
 
-Once the download is finished, map the assembled scaffolds to the vitis genome for checking out the mapping coverage of the assembled genome.The ragtag is located at: [Ragtag](https://github.com/malonge/RagTag)
-The genome completeness is also evaluated using the compleasm [compleasm](https://github.com/huangnengCSU/compleasm)
 
 
 
