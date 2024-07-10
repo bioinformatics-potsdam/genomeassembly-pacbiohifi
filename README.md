@@ -16,7 +16,6 @@
 #### Genome Analysis and Project Summary
 - The project is loated at the following links given below:
    <img src="https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/publication_ready_figure.png" alt="image" width="400" height="auto">
-- Project documentation: [Project documentation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/projectsummary.md) 
 - Project parameters: [Project parameters](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/projectparameters.md) 
 - Genome assembly summary: [Summary evaluation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/summarystats.md) 
 - Reference evaluation: [Reference evaluation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/referenceevaluation.md) 
