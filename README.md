@@ -12,7 +12,7 @@
 - [QUAST](https://github.com/ablab/quast) 
 - [BUSCO](https://github.com/metashot/busco) 
 - [compleasm](https://github.com/huangnengCSU/compleasm)
-- 
+  
 #### Genome Analysis and Project Summary
 - The project is loated at the following links given below:
    <img src="https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/publication_ready_figure.png" alt="image" width="400" height="auto">
