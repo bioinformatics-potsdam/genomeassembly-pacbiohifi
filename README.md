@@ -1,6 +1,6 @@
-# genomeassembly-robusta
+# genomeassembly-benchmarks
 
-<div align = "justify"> complete analysis and report generation for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. </div>
+<div align = "justify"> I complete analysis and benchmarking of the pacbiohifi and report generation for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. </div>
    
 #### Genome assembly packages used for the assembly
 - [hifiasm](https://github.com/chhylp123/hifiasm) 
@@ -12,10 +12,10 @@
 #### Genome assembly evaluation
 - [QUAST](https://github.com/ablab/quast) 
 - [BUSCO](https://github.com/metashot/busco) 
-- [Ragtag](https://github.com/malonge/RagTag) based on the nucleotide approach **New approach**
-- [compleasm](https://github.com/huangnengCSU/compleasm) based on the protein approach **New approach**
+- [Ragtag](https://github.com/malonge/RagTag)
+- [compleasm](https://github.com/huangnengCSU/compleasm) 
 - [blobtoolkit](https://github.com/blobtoolkit/blobtoolkit)
-- [gci](https://github.com/yeeus/GCI) a new estimation of the PacbioHifi for the coverage and the completeness based on the read mapping approaches. **New approach**
+- [gci](https://github.com/yeeus/GCI) 
 
 #### Genome Analysis and Project Summary
 - The project image summary for the June presentation is loated at the following links given below:
