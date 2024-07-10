@@ -7,18 +7,14 @@
 - [Meryl](https://github.com/marbl/meryl) 
 - [Merqury](https://github.com/marbl/merqury) 
 - [Verkko](https://github.com/marbl/verkko)
-- [genomeasm4pg](https://gitlab.cirad.fr/agap/workflows/genomeassembly)
 
 #### Genome assembly evaluation
 - [QUAST](https://github.com/ablab/quast) 
 - [BUSCO](https://github.com/metashot/busco) 
-- [Ragtag](https://github.com/malonge/RagTag)
-- [compleasm](https://github.com/huangnengCSU/compleasm) 
-- [blobtoolkit](https://github.com/blobtoolkit/blobtoolkit)
-- [gci](https://github.com/yeeus/GCI) 
-
+- [compleasm](https://github.com/huangnengCSU/compleasm)
+- 
 #### Genome Analysis and Project Summary
-- The project image summary for the June presentation is loated at the following links given below:
+- The project is loated at the following links given below:
    <img src="https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/publication_ready_figure.png" alt="image" width="400" height="auto">
 - Project documentation: [Project documentation](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/projectsummary.md) 
 - Project parameters: [Project parameters](https://github.com/gauravcodepro/genomeassembly-robusta/blob/main/projectparameters.md) 
