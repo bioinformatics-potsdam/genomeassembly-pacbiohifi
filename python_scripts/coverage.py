@@ -1,3 +1,7 @@
+#!/usr/bin/env python3 
+# Author: Gaurav Sablok
+# Universitat Potsdam
+# Date 2024-3-19
 def plotvisual(cov, 
                  lengthparameter,file = None, 
                      plot = None, ):
