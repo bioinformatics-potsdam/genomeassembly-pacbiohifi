@@ -1,5 +1,4 @@
 #!/usr/bin/awk
-# Universitat Potsdam
 # Author Gaurav Sablok
 # Date 2024-3-15
 
