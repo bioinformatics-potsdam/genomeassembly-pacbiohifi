@@ -1,4 +1,4 @@
-# genomeassembly-pacbiohifi
+#### genomeassembly-pacbiohifi
 
 <div align = "justify"> I completed analysis and benchmarking of the pacbiohifi for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. </div>
    
