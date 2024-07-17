@@ -1,6 +1,6 @@
-# genomeassembly-benchmarks
+# genomeassembly-pacbiohifi
 
-<div align = "justify"> I complete analysis and benchmarking of the pacbiohifi and report generation for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. </div>
+<div align = "justify"> I completed analysis and benchmarking of the pacbiohifi for the genome assembly coming from the PacBioHifi reads for the genotypes and haplotypes and their quality assessment. This is the complete genome assembly standardization coming from the PacBioHifi reads and includes all the scripts and the analysis for the reproducibility and the visualziation and the summary analysis. </div>
    
 #### Genome assembly packages used for the assembly
 - [hifiasm](https://github.com/chhylp123/hifiasm) 
@@ -155,4 +155,6 @@
 | hap1 | 393 | 385 | 8 | 1 | 31 | 92.5% |
 | hap2 | 394 | 383 | 11 | 3 | 28 | 92.7% |
 
-Gaurav 
+- I am extending this with the HiC, Chromosomal Application development, Genome bubble solver and other applications. 
+
+Gaurav Sablok
